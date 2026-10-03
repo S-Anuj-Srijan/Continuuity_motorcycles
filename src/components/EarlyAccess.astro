@@ -1,0 +1,14 @@
+---
+const key = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
+---
+<section id="early-access" class="early-access wrap" data-section="early-access">
+  <div><p class="eyebrow">C-01 DEVELOPMENT</p><h2>Follow what<br />comes next.</h2><p>Receive major C-01 development updates, prototype milestones and future access announcements from Continuity Motors.</p></div>
+  <form id="lead-form" data-sitekey={key} data-clarity-mask="true">
+    <label for="email">Email address</label>
+    <div class="form-row"><input id="email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="email-support form-status" placeholder="you@example.com" data-clarity-mask="true" /><button class="button" type="submit" disabled={!key}>Join early access <span aria-hidden="true">↗</span></button></div>
+    <p id="email-support" class="small">By joining, you agree to receive occasional Continuity development updates. You can unsubscribe at any time.</p>
+    <div id="turnstile-widget"></div>
+    <p id="form-status" role="status" aria-live="polite" class="small">{!key && 'Early-access registration is not open yet. Please check back for development updates.'}</p>
+    <a href="/privacy" class="small">Read our privacy policy</a>
+  </form>
+</section>

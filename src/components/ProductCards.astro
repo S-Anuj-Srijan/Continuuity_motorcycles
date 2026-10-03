@@ -1,0 +1,17 @@
+---
+import Asset from './Asset.astro';
+import { pages } from '../lib/content';
+const home = pages.find(p=>p.route==='/')!;
+const section=home.sections.find(s=>s.key==='C-01 FAMILY')!;
+---
+<div class="product-grid" data-product-order>
+  {['camel','messerschmitt'].map((slug,i)=> {
+    const copy=section[slug==='camel'?'Camel card':'Messerschmitt card'] || '';
+    const [name,descriptor,...body]=copy.split('\n');
+    return <article class="product-card" data-product={`c01_${slug}`} data-section="product-card">
+      <div class="card-label"><span>0{i+1} / C-01</span><span>Digital concept</span></div>
+      <Asset id={`${slug}_hero_side`} interactive={false} caption={false} />
+      <div class="card-copy"><p class="eyebrow">{descriptor}</p><h3>{name}</h3><p>{body.join('\n')}</p><a class="text-link" data-track="product_card_click" href={`/c-01/${slug}`}>Explore {slug==='camel'?'Camel':'Messerschmitt'} <span aria-hidden="true">↗</span></a></div>
+    </article>;
+  })}
+</div>

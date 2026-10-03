@@ -1,0 +1,54 @@
+---
+import '@fontsource/manrope/400.css';
+import '@fontsource/manrope/500.css';
+import '@fontsource/manrope/600.css';
+import '../styles/tokens.css';
+import '../styles/global.css';
+import {nav} from '../lib/content';
+import assets from '../content/assets.json';
+interface Props {title:string;description:string;route:string;product?:string;article?:boolean;noindex?:boolean;image?:string;}
+const {title,description,route,product='',article=false,noindex=false,image='/assets/products/c01/camel/continuity-c01-camel-electric-roadster-side-profile.webp'}=Astro.props;
+const origin=Astro.site!;
+const canonical=new URL(route,origin).href;
+const heroAssets=route==='/'?Object.fromEntries(['camel','messerschmitt'].map(v=>[v,assets[`${v}_poster_hangar` as keyof typeof assets]])):product?{[product.replace('c01_','')]:assets[`${product.replace('c01_','')}_hero_side` as keyof typeof assets]}:{};
+const heroPreloads=Object.fromEntries(Object.entries(heroAssets).map(([key,a])=>[key,{href:a.path,srcset:a.widths.map(w=>`${a.path.replace('.avif','')}-${w}.avif ${w}w`).join(', ')}]));
+const organization={'@type':'Organization','@id':new URL('/#organization',origin).href,name:'Continuity Motors',url:origin.href,logo:new URL('/assets/brand/continuity-motors-logo.png',origin).href};
+const graph:any[]=[organization,{'@type':'WebSite',name:'Continuity Motors',url:origin.href,publisher:{'@id':organization['@id']}}];
+if(route!=='/')graph.push({'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:origin.href},...(article?[{'@type':'ListItem',position:2,name:'Journal',item:new URL('/journal',origin).href}]:[]),{'@type':'ListItem',position:article?3:2,name:title.split('|')[0].trim(),item:canonical}]});
+if(article)graph.push({'@type':'Article',headline:title.split('|')[0].trim(),description,mainEntityOfPage:canonical,publisher:{'@id':organization['@id']},author:{'@id':organization['@id']}});
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title><meta name="description" content={description} /><link rel="canonical" href={canonical} />
+  <meta name="theme-color" content="#090B0A" /><meta name="robots" content={noindex?'noindex, follow':'index, follow'} />
+  <meta property="og:type" content={article?'article':'website'} /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:site_name" content="Continuity Motors" /><meta property="og:image" content={new URL(image,origin).href} /><meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="/assets/brand/continuity-motors-logo.png" />
+  <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/</g,'\\u003c')} />
+  <script is:inline>
+    try {
+      let assignment=JSON.parse(sessionStorage.getItem('continuity-assignment')||'null');
+      const existingVariant=document.cookie.match(/(?:^|;\s*)cm_variant=(camel|messerschmitt)/)?.[1];
+      if(existingVariant)assignment={...(assignment||{}),variant:existingVariant,landing:assignment?.landing||location.pathname};
+      if(!assignment){const direct=location.pathname.match(/^\/c-01\/(camel|messerschmitt)\/?$/)?.[1];assignment={variant:direct||(crypto.getRandomValues(new Uint32Array(1))[0]<2147483648?'camel':'messerschmitt'),method:direct?'direct_campaign':'randomized',landing:location.pathname};sessionStorage.setItem('continuity-assignment',JSON.stringify(assignment));}
+      document.documentElement.dataset.variant=assignment.variant;
+    }catch{document.documentElement.dataset.variant='camel';}
+  </script>
+  <script is:inline define:vars={{heroPreloads,heroProduct:product.replace('c01_','')}}>
+    const selectedHero=heroPreloads[heroProduct||document.documentElement.dataset.variant];
+    if(selectedHero){const preload=document.createElement('link');preload.rel='preload';preload.as='image';preload.type='image/avif';preload.href=selectedHero.href;preload.imageSrcset=selectedHero.srcset;preload.imageSizes='(max-width: 700px) 100vw, 90vw';document.head.append(preload);}
+  </script>
+</head>
+<body data-product={product} data-page={route} data-ga={import.meta.env.PUBLIC_GA_MEASUREMENT_ID||''} data-clarity={import.meta.env.PUBLIC_CLARITY_PROJECT_ID||''}>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="wordmark" href="/" aria-label="Continuity Motors home"><img src="/assets/brand/continuity-motors-logo.png" alt="Continuity Motors logo." width="54" height="40" /><span>CONTINUITY<small>M O T O R S</small></span></a><nav class="desktop-nav" aria-label="Main navigation">{nav.map(([label,href])=><a href={href} aria-current={route===href?'page':undefined}>{label}</a>)}</nav><a class="nav-access" href="#early-access" data-track="cta_click">Early access <span aria-hidden="true">↗</span></a><button class="menu-button" aria-haspopup="dialog" aria-controls="mobile-menu">Menu <span aria-hidden="true">☰</span></button></header>
+  <dialog id="mobile-menu" aria-label="Main navigation"><button class="dialog-close" data-close>Close ×</button><nav>{nav.map(([label,href])=><a href={href}>{label}</a>)}<a href="#early-access" data-close>Early access ↗</a></nav></dialog>
+  <main id="main"><slot /></main>
+  <footer class="site-footer wrap"><div class="footer-top"><div><p class="wordmark">CONTINUITY<small>M O T O R S</small></p><p>Electric motorcycles in development.<br />India first. Built with a wider world in mind.</p></div><nav aria-label="Footer navigation">{[...nav,['Privacy','/privacy'],['Terms','/terms']].map(([label,href])=><a href={href}>{label}</a>)}<button class="link-button" data-consent-open>Privacy preferences</button></nav></div><div class="footer-bottom"><p>The C-01 is currently in digital development and is not available for purchase.</p><p>© {new Date().getFullYear()} Continuity Motors. All rights reserved.</p></div></footer>
+  <aside id="consent-banner" class="consent-banner" aria-label="Privacy preferences" hidden><div><h2>Your choice, not ours.</h2><p>We use essential technology to operate this site. With your permission, we also use analytics to understand how people use Continuity so we can improve the experience and evaluate product interest.</p></div><div class="consent-actions"><button class="button" data-consent="accepted">Accept analytics</button><button class="button secondary" data-consent="denied">Reject optional</button><button class="link-button" data-consent-manage>Manage preferences</button></div></aside>
+  <dialog id="consent-dialog" aria-labelledby="consent-title"><button class="dialog-close" data-close>Close ×</button><h2 id="consent-title">Your privacy preferences.</h2><p><strong>Necessary</strong><br />Required for site operation and security. Always active.</p><label class="consent-option"><input id="analytics-choice" type="checkbox" /> Analytics</label><p>Helps us understand visits, page use and product interest through tools such as Google Analytics and Microsoft Clarity.</p><button class="button" id="save-consent">Save preferences</button></dialog>
+  <dialog id="image-viewer" aria-label="Full-screen concept image"><div class="viewer-toolbar"><span id="viewer-title">Digital concept study</span><div><button data-zoom="out" aria-label="Zoom out">−</button><button data-zoom="reset">Reset</button><button data-zoom="in" aria-label="Zoom in">+</button><button data-close>Close ×</button></div></div><div id="viewer-stage" tabindex="0" aria-label="Image area. Use plus and minus controls to zoom, scroll to pan."><img id="viewer-image" alt="" /></div><p class="viewer-note">Digital concept. Figures in artwork are development information, not validated production specifications.</p></dialog>
+  <script>import '../lib/client';</script>
+</body>
+</html>

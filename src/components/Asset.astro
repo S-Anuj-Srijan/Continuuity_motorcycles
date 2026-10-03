@@ -1,0 +1,18 @@
+---
+import manifest from '../content/assets.json';
+interface Props { id: string; eager?: boolean; interactive?: boolean; caption?: boolean; }
+const {id,eager=false,interactive=true,caption=true} = Astro.props;
+const asset = manifest[id as keyof typeof manifest];
+const stem = asset.path.replace(/\.avif$/,'');
+const set = (format:string) => asset.widths.map(w=>`${stem}-${w}.${format} ${w}w`).join(', ');
+---
+<figure class:list={['asset', { 'is-board': id.includes('board') }]}>
+  <div class="asset-frame">
+    <picture>
+      <source type="image/avif" srcset={set('avif')} sizes="(max-width: 700px) 100vw, 90vw" />
+      <img src={`${stem}.webp`} srcset={set('webp')} sizes="(max-width: 700px) 100vw, 90vw" width={asset.width} height={asset.height} alt={asset.alt} loading={eager?'eager':'lazy'} fetchpriority={eager?'high':'auto'} decoding="async" />
+    </picture>
+    {interactive && <button class="image-open" data-asset={id} data-src={`${stem}.webp`} data-alt={asset.alt} aria-label={`Open full-screen: ${asset.alt}`}>Expand image <span aria-hidden="true">↗</span></button>}
+  </div>
+  {caption && <figcaption><span>{id.includes('engineering')?'Concept engineering study':id.includes('views')?'Multi-view design study':'Digital concept'}</span><span>Production specifications not finalized</span></figcaption>}
+</figure>

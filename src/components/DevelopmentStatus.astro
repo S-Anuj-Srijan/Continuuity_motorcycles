@@ -1,0 +1,5 @@
+---
+import {pages} from '../lib/content';
+const rows=pages.find(p=>p.route==='/development')!.status;
+---
+<div class="status-table wrap" data-section="status-table"><p class="eyebrow">CURRENT PHASE / DIGITAL DEVELOPMENT</p><table><caption>Current C-01 development status — October 2026</caption><tbody>{rows.map(([label,status])=><tr><th scope="row">{label}</th><td>{status}</td></tr>)}</tbody></table></div>

@@ -1,0 +1,5 @@
+---
+interface Props { items: {q:string;a:string}[] }
+const {items}=Astro.props;
+---
+{items.length>0 && <section class="faq wrap" data-section="faq"><p class="eyebrow">A FEW ANSWERS</p><h2>Before the first ride.</h2><div>{items.map(({q,a})=><details><summary>{q}<span aria-hidden="true">+</span></summary><p>{a}</p></details>)}</div></section>}

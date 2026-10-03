@@ -1,0 +1,434 @@
+CONTINUITY MOTORS — ASSET MAP
+Version 1.0
+
+PURPOSE
+This file maps every image you supplied to:
+- what it actually represents
+- the stable internal asset ID the website should use
+- the recommended final filename
+- where the asset should appear
+- the recommended alt text
+- what analytics should call it
+
+IMPORTANT
+Do not use the current typo-heavy filenames in analytics, content models or database records.
+Rename the files once, then use stable asset IDs forever.
+
+==================================================
+1. LOGO
+==================================================
+
+CURRENT FILE:
+logo.png
+
+WHAT IT IS:
+Primary Continuity Motors logo/wordmark on a dark background.
+
+STABLE ASSET ID:
+brand_logo_primary
+
+RECOMMENDED FINAL FILE:
+continuity-motors-logo.png
+
+USE ON:
+- global navigation
+- footer
+- social/share assets where appropriate
+- favicon/social variants should later be exported separately
+
+ALT TEXT:
+Continuity Motors logo.
+
+ANALYTICS ASSET ID:
+brand_logo_primary
+
+==================================================
+2. C-01 CAMEL — CLEAN HERO/SIDE PROFILE
+==================================================
+
+CURRENT FILE:
+C01-camel.png
+(you also uploaded the same visual in a later turn under the same basic filename)
+
+WHAT IT IS:
+Primary clean presentation of the C-01 Camel. This is the main product beauty/side-profile image and should be treated as the canonical product identity image for Camel.
+
+STABLE ASSET ID:
+camel_hero_side
+
+RECOMMENDED FINAL FILE:
+continuity-c01-camel-electric-roadster-side-profile.avif
+
+WEB FALLBACK:
+continuity-c01-camel-electric-roadster-side-profile.webp
+
+USE ON:
+- /c-01/camel hero or first product-form section
+- /c-01 family page Camel card
+- homepage Camel product card if a clean product image is preferred over the poster
+- Open Graph/social image candidate if separately cropped to 1200x630
+- structured product image reference later
+
+ALT TEXT:
+Side profile of the Continuity C-01 Camel electric motorcycle concept in racing green.
+
+ANALYTICS ASSET ID:
+camel_hero_side
+
+==================================================
+3. C-01 CAMEL — MULTI-VIEW DESIGN BOARD
+==================================================
+
+CURRENT FILE:
+camel_different_views.png
+
+WHAT IT IS:
+A multi-view design board showing Camel from several angles, including side/front/rear/top/three-quarter perspectives.
+
+STABLE ASSET ID:
+camel_views_board
+
+RECOMMENDED FINAL FILE:
+continuity-c01-camel-multi-view-design-study.avif
+
+USE ON:
+- /c-01/camel “Every angle” section
+- optional full-screen image viewer
+- design/development page when discussing multi-view development
+- not ideal as homepage hero because it contains too much information at once
+
+ALT TEXT:
+Continuity C-01 Camel multi-view design study showing side, front, rear, top and three-quarter views.
+
+ANALYTICS ASSET ID:
+camel_views_board
+
+INTERACTION TO TRACK:
+asset_open
+asset_zoom
+viewer_active_ms
+
+==================================================
+4. C-01 CAMEL — CINEMATIC HANGAR POSTER
+==================================================
+
+CURRENT FILE:
+camel_poster.png
+
+WHAT IT IS:
+Cinematic marketing/poster artwork showing the Camel in an aircraft-hangar environment.
+
+STABLE ASSET ID:
+camel_poster_hangar
+
+RECOMMENDED FINAL FILE:
+continuity-c01-camel-hangar-concept.avif
+
+USE ON:
+- homepage hero candidate
+- /c-01/camel “Context” or “In its world” section
+- social campaign creative
+- image-led brand transitions
+- not as the only product-identification image, because the atmosphere is stronger than the factual product view
+
+ALT TEXT:
+Continuity C-01 Camel electric motorcycle concept shown in a cinematic aircraft-hangar setting.
+
+ANALYTICS ASSET ID:
+camel_poster_hangar
+
+INTERACTION TO TRACK:
+poster_view
+asset_open
+share_click
+
+==================================================
+5. C-01 CAMEL — COMPONENT / ENGINEERING ANALYSIS BOARD
+==================================================
+
+CURRENT FILE:
+componend_analysis_camle.png
+
+WHAT IT IS:
+Camel component-analysis / concept engineering board showing electric powertrain and control-system placement.
+
+STABLE ASSET ID:
+camel_engineering_board
+
+RECOMMENDED FINAL FILE:
+continuity-c01-camel-electric-powertrain-study.avif
+
+USE ON:
+- /c-01/camel Engineering section
+- /engineering as a product-specific example
+- optional hotspot viewer if image resolution supports it
+- development page if showing concept packaging progression
+
+ALT TEXT:
+Continuity C-01 Camel concept engineering study showing the placement of electric powertrain and control components.
+
+ANALYTICS ASSET ID:
+camel_engineering_board
+
+POSSIBLE HOTSPOT IDS:
+battery_pack
+motor
+inverter_controller
+bms
+dc_dc
+onboard_charger
+low_voltage_controls
+power_electronics
+
+IMPORTANT:
+Any numeric labels inside this image are concept/development information unless later validated. Do not automatically extract them into production specification text.
+
+==================================================
+6. C-01 MESSERSCHMITT — CLEAN HERO/SIDE PROFILE
+==================================================
+
+CURRENT FILE:
+c01-messerschmidt.png
+
+WHAT IT IS:
+Primary clean presentation of the C-01 Messerschmitt. This is the canonical product identity image for Messerschmitt.
+
+STABLE ASSET ID:
+messerschmitt_hero_side
+
+RECOMMENDED FINAL FILE:
+continuity-c01-messerschmitt-electric-cafe-racer-side-profile.avif
+
+USE ON:
+- /c-01/messerschmitt hero or first product-form section
+- /c-01 family page Messerschmitt card
+- homepage Messerschmitt product card
+- Open Graph/social image candidate if separately cropped
+- structured product image reference later
+
+ALT TEXT:
+Side profile of the Continuity C-01 Messerschmitt electric motorcycle concept in racing green.
+
+ANALYTICS ASSET ID:
+messerschmitt_hero_side
+
+==================================================
+7. C-01 MESSERSCHMITT — COMPONENT / ENGINEERING ANALYSIS BOARD
+==================================================
+
+CURRENT FILE:
+messerschmidt_componend_analysis.png
+
+WHAT IT IS:
+Messerschmitt component-analysis / concept engineering board showing electric powertrain and electronic component placement.
+
+STABLE ASSET ID:
+messerschmitt_engineering_board
+
+RECOMMENDED FINAL FILE:
+continuity-c01-messerschmitt-electric-powertrain-study.avif
+
+USE ON:
+- /c-01/messerschmitt Engineering section
+- /engineering as a product-specific example
+- optional hotspot viewer
+- /development for concept packaging documentation
+
+ALT TEXT:
+Continuity C-01 Messerschmitt concept engineering study showing the placement of electric powertrain and control components.
+
+ANALYTICS ASSET ID:
+messerschmitt_engineering_board
+
+POSSIBLE HOTSPOT IDS:
+battery_pack
+motor
+inverter_controller
+bms
+dc_dc
+onboard_charger
+low_voltage_controls
+power_electronics
+
+IMPORTANT:
+Any numeric labels inside this image remain concept/development information unless later validated.
+
+==================================================
+8. C-01 MESSERSCHMITT — MULTI-VIEW DESIGN BOARD
+==================================================
+
+CURRENT FILE:
+messerschmidt_diferent_views.png
+
+WHAT IT IS:
+A multi-view design board showing Messerschmitt from several angles.
+
+STABLE ASSET ID:
+messerschmitt_views_board
+
+RECOMMENDED FINAL FILE:
+continuity-c01-messerschmitt-multi-view-design-study.avif
+
+USE ON:
+- /c-01/messerschmitt “Every angle” section
+- full-screen viewer
+- development/design page as a multi-view development example
+
+ALT TEXT:
+Continuity C-01 Messerschmitt multi-view design study showing side, front, rear, top and three-quarter views.
+
+ANALYTICS ASSET ID:
+messerschmitt_views_board
+
+INTERACTION TO TRACK:
+asset_open
+asset_zoom
+viewer_active_ms
+
+==================================================
+9. C-01 MESSERSCHMITT — CINEMATIC HANGAR POSTER
+==================================================
+
+CURRENT FILE:
+messersmidt_poster.png
+
+WHAT IT IS:
+Cinematic marketing/poster artwork showing the Messerschmitt beside a historic aircraft in a wet hangar environment.
+
+STABLE ASSET ID:
+messerschmitt_poster_hangar
+
+RECOMMENDED FINAL FILE:
+continuity-c01-messerschmitt-hangar-concept.avif
+
+USE ON:
+- homepage hero candidate
+- /c-01/messerschmitt Context section
+- social campaign creative
+- share image / brand moment
+- not as the only factual product representation
+
+ALT TEXT:
+Continuity C-01 Messerschmitt electric motorcycle concept shown beside a historic aircraft in a cinematic hangar setting.
+
+ANALYTICS ASSET ID:
+messerschmitt_poster_hangar
+
+INTERACTION TO TRACK:
+poster_view
+asset_open
+share_click
+
+==================================================
+RECOMMENDED PUBLIC ASSET DIRECTORY
+==================================================
+
+/public/assets/
+  /brand/
+    continuity-motors-logo.png
+
+  /products/
+    /c01/
+      /camel/
+        continuity-c01-camel-electric-roadster-side-profile.avif
+        continuity-c01-camel-electric-roadster-side-profile.webp
+        continuity-c01-camel-multi-view-design-study.avif
+        continuity-c01-camel-electric-powertrain-study.avif
+        continuity-c01-camel-hangar-concept.avif
+
+      /messerschmitt/
+        continuity-c01-messerschmitt-electric-cafe-racer-side-profile.avif
+        continuity-c01-messerschmitt-electric-cafe-racer-side-profile.webp
+        continuity-c01-messerschmitt-multi-view-design-study.avif
+        continuity-c01-messerschmitt-electric-powertrain-study.avif
+        continuity-c01-messerschmitt-hangar-concept.avif
+
+==================================================
+ASSET USAGE BY PAGE
+==================================================
+
+HOME /
+- hero: camel_poster_hangar OR messerschmitt_poster_hangar
+- C-01 cards: camel_hero_side + messerschmitt_hero_side
+- engineering teaser: one engineering board, preferably randomized or alternated
+
+C-01 /c-01
+- family split: camel_hero_side + messerschmitt_hero_side
+- optional engineering comparison: both engineering boards
+- optional final full-bleed image: one poster image
+
+CAMEL /c-01/camel
+- hero/form: camel_hero_side
+- engineering: camel_engineering_board
+- every angle: camel_views_board
+- context: camel_poster_hangar
+
+MESSERSCHMITT /c-01/messerschmitt
+- hero/form: messerschmitt_hero_side
+- engineering: messerschmitt_engineering_board
+- every angle: messerschmitt_views_board
+- context: messerschmitt_poster_hangar
+
+ENGINEERING /engineering
+- camel_engineering_board
+- messerschmitt_engineering_board
+- optional crops from both boards for specific component explanations
+
+DESIGN /design
+- camel_hero_side
+- messerschmitt_hero_side
+- poster images as visual references for aviation influence
+- detail crops can be created later from current boards
+
+DEVELOPMENT /development
+- multi-view boards
+- engineering boards
+- optional “digital concept” callouts layered beside them
+
+ABOUT /about
+- logo
+- one neutral C-01 product image
+- avoid making this page visually dominated by only one variant
+
+JOURNAL
+- use relevant product or engineering imagery only when it genuinely supports the article
+- do not use the same hero image on every article
+
+==================================================
+IMAGE PERFORMANCE RULES
+==================================================
+
+For major images, generate:
+480w
+768w
+1280w
+1920w
+2560w only where genuinely useful
+
+Preferred delivery:
+1. AVIF
+2. WebP fallback
+3. PNG only when transparency or exact output requires it
+
+Implementation:
+- use srcset
+- use sizes
+- preload only the actual first hero
+- lazy-load below-the-fold images
+- specify width/height or aspect ratio
+- do not preload both product hero sets on mobile
+- keep full-resolution originals outside the public bundle
+
+==================================================
+ANALYTICS RULE
+==================================================
+
+Always track stable asset IDs, never filenames.
+
+GOOD:
+asset_id = camel_views_board
+
+BAD:
+asset_id = camel_different_views.png
+
+This prevents analytics history from breaking when files are renamed or reformatted.

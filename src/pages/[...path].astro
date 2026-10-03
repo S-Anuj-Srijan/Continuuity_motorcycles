@@ -1,0 +1,7 @@
+---
+import PageContent from '../components/PageContent.astro';
+import {pages} from '../lib/content';
+export function getStaticPaths(){return pages.map(page=>({params:{path:page.route==='/'?undefined:page.route.slice(1)},props:{page}}));}
+const {page}=Astro.props;
+---
+<PageContent page={page} />

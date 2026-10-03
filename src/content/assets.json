@@ -1,0 +1,119 @@
+{
+  "brand_logo_primary": {
+    "id": "brand_logo_primary",
+    "product": null,
+    "alt": "Continuity Motors logo.",
+    "path": "/assets/brand/continuity-motors-logo.png",
+    "width": 457,
+    "height": 297,
+    "widths": []
+  },
+  "camel_hero_side": {
+    "id": "camel_hero_side",
+    "product": "camel",
+    "alt": "Side profile of the Continuity C-01 Camel electric motorcycle concept in racing green.",
+    "path": "/assets/products/c01/camel/continuity-c01-camel-electric-roadster-side-profile.avif",
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      480,
+      768,
+      1280,
+      1536
+    ]
+  },
+  "camel_views_board": {
+    "id": "camel_views_board",
+    "product": "camel",
+    "alt": "Continuity C-01 Camel multi-view design study showing side, front, rear, top and three-quarter views.",
+    "path": "/assets/products/c01/camel/continuity-c01-camel-multi-view-design-study.avif",
+    "width": 1067,
+    "height": 356,
+    "widths": [
+      480,
+      768,
+      1067
+    ]
+  },
+  "camel_poster_hangar": {
+    "id": "camel_poster_hangar",
+    "product": "camel",
+    "alt": "Continuity C-01 Camel electric motorcycle concept shown in a cinematic aircraft-hangar setting.",
+    "path": "/assets/products/c01/camel/continuity-c01-camel-hangar-concept.avif",
+    "width": 1509,
+    "height": 1042,
+    "widths": [
+      480,
+      768,
+      1280,
+      1509
+    ]
+  },
+  "camel_engineering_board": {
+    "id": "camel_engineering_board",
+    "product": "camel",
+    "alt": "Continuity C-01 Camel concept engineering study showing the placement of electric powertrain and control components.",
+    "path": "/assets/products/c01/camel/continuity-c01-camel-electric-powertrain-study.avif",
+    "width": 1161,
+    "height": 442,
+    "widths": [
+      480,
+      768,
+      1161
+    ]
+  },
+  "messerschmitt_hero_side": {
+    "id": "messerschmitt_hero_side",
+    "product": "messerschmitt",
+    "alt": "Side profile of the Continuity C-01 Messerschmitt electric motorcycle concept in racing green.",
+    "path": "/assets/products/c01/messerschmitt/continuity-c01-messerschmitt-electric-cafe-racer-side-profile.avif",
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      480,
+      768,
+      1280,
+      1536
+    ]
+  },
+  "messerschmitt_engineering_board": {
+    "id": "messerschmitt_engineering_board",
+    "product": "messerschmitt",
+    "alt": "Continuity C-01 Messerschmitt concept engineering study showing the placement of electric powertrain and control components.",
+    "path": "/assets/products/c01/messerschmitt/continuity-c01-messerschmitt-electric-powertrain-study.avif",
+    "width": 896,
+    "height": 265,
+    "widths": [
+      480,
+      768,
+      896
+    ]
+  },
+  "messerschmitt_views_board": {
+    "id": "messerschmitt_views_board",
+    "product": "messerschmitt",
+    "alt": "Continuity C-01 Messerschmitt multi-view design study showing side, front, rear, top and three-quarter views.",
+    "path": "/assets/products/c01/messerschmitt/continuity-c01-messerschmitt-multi-view-design-study.avif",
+    "width": 1067,
+    "height": 348,
+    "widths": [
+      480,
+      768,
+      1067
+    ]
+  },
+  "messerschmitt_poster_hangar": {
+    "id": "messerschmitt_poster_hangar",
+    "product": "messerschmitt",
+    "alt": "Continuity C-01 Messerschmitt electric motorcycle concept shown beside a historic aircraft in a cinematic hangar setting.",
+    "path": "/assets/products/c01/messerschmitt/continuity-c01-messerschmitt-hangar-concept.avif",
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      480,
+      768,
+      1280,
+      1536
+    ]
+  }
+}

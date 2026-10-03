@@ -1,0 +1,1574 @@
+CONTINUITY MOTORS — WEBSITE CONTENT MASTER
+Version 1.0
+Date: October 2026
+
+PURPOSE
+This is the complete first-pass website copy for Continuity Motors. It is written so that:
+1. Humans understand the brand and products.
+2. Search engines understand the company, product family, product variants and topics.
+3. AI/LLM systems can retrieve clear factual statements without guessing.
+
+NON-NEGOTIABLE PUBLISHING RULES
+- The C-01 is currently a digital motorcycle concept in pre-physical-prototype development.
+- Do not describe the C-01, Camel, or Messerschmitt as currently available for sale.
+- Do not publish a price, tested range, tested top speed, charging time, power figure, production date, or delivery date unless validated and approved.
+- Any numerical values visible inside concept artwork are concept/development targets unless explicitly validated later.
+- Use the full product names early on each important page:
+  * Continuity C-01
+  * Continuity C-01 Camel
+  * Continuity C-01 Messerschmitt
+- Core factual information must exist as real HTML text, not only inside images.
+- Camel and Messerschmitt product pages must use the same section structure and comparable content density so the experiment is fair.
+- The names Continuity Motors, C-01, Camel and Messerschmitt should receive trademark/legal clearance before commercial launch.
+- Do not add meta keywords.
+
+==================================================
+GLOBAL NAVIGATION
+==================================================
+
+C-01
+Engineering
+Design
+Development
+Journal
+About
+[ Early Access ]
+
+GLOBAL EARLY-ACCESS MODULE
+
+Eyebrow:
+C-01 DEVELOPMENT
+
+Heading:
+Follow what comes next.
+
+Body:
+Receive major C-01 development updates, prototype milestones and future access announcements from Continuity Motors.
+
+Field label:
+Email address
+
+Button:
+Join early access
+
+Consent support text:
+By joining, you agree to receive occasional Continuity development updates. You can unsubscribe at any time.
+
+Success:
+You're on the list.
+We'll write when there is something worth showing.
+
+Invalid email:
+Enter a valid email address.
+
+Server error:
+Something went wrong. Please try again.
+
+GLOBAL FOOTER
+
+CONTINUITY MOTORS
+
+Electric motorcycles in development.
+India first. Built with a wider world in mind.
+
+Footer links:
+C-01
+Engineering
+Design
+Development
+Journal
+About
+Privacy
+Terms
+
+Development note:
+The C-01 is currently in digital development and is not available for purchase.
+
+Copyright:
+© [YEAR] Continuity Motors. All rights reserved.
+
+ANALYTICS CONSENT BANNER
+
+Heading:
+Your choice, not ours.
+
+Body:
+We use essential technology to operate this site. With your permission, we also use analytics to understand how people use Continuity so we can improve the experience and evaluate product interest.
+
+Buttons:
+Accept analytics
+Reject optional
+Manage preferences
+
+Preferences:
+Necessary
+Required for site operation and security.
+
+Analytics
+Helps us understand visits, page use and product interest through tools such as Google Analytics and Microsoft Clarity.
+
+==================================================
+PAGE 1 — HOMEPAGE
+URL: /
+==================================================
+
+SEO title:
+Continuity Motors | Retro Electric Motorcycles from India
+
+Meta description:
+Continuity Motors is developing the C-01, a retro-influenced electric motorcycle platform built around traditional proportions and visible electric engineering.
+
+H1:
+Electric motorcycles, without losing the machine.
+
+HERO
+
+Eyebrow:
+CONTINUITY MOTORS
+
+Body:
+Continuity Motors is developing the C-01, a retro-influenced electric motorcycle platform created around traditional motorcycle proportions, visible electric engineering and an enthusiast-first point of view.
+
+Primary CTA:
+Explore the C-01
+
+Secondary CTA:
+See development status
+
+Visual:
+Use one cinematic C-01 hangar poster. During experiments, randomize whether Camel or Messerschmitt is shown first and record the exposure.
+
+SECTION — OUR POINT OF VIEW
+
+Eyebrow:
+OUR POINT OF VIEW
+
+Heading:
+The powertrain changed. The motorcycle does not have to disappear.
+
+Body:
+Electric motorcycles remove many of the mechanical forms that defined the centre of a traditional motorcycle. Continuity starts with that absence.
+
+Instead of hiding the battery, power electronics and motor beneath generic bodywork, the C-01 explores how electric hardware can become part of the motorcycle's visual identity.
+
+SECTION — C-01 FAMILY
+
+Eyebrow:
+THE FIRST PLATFORM
+
+Heading:
+C-01
+
+Body:
+C-01 is Continuity's first electric motorcycle platform, currently in digital development. It is expressed through two design directions built around the same central idea: preserve the visual clarity and proportion of an enthusiast motorcycle while giving the electric powertrain a form of its own.
+
+Camel card:
+C-01 Camel
+Classic-inspired electric roadster
+
+An upright, roadster-oriented interpretation of the C-01 built around traditional proportions and a deliberately visible electric architecture.
+
+CTA:
+Explore Camel
+
+Messerschmitt card:
+C-01 Messerschmitt
+Café-racer-influenced electric motorcycle
+
+A sharper, sport-oriented interpretation of the C-01 that applies the same visible electric architecture to a more focused café-racer-influenced stance.
+
+CTA:
+Explore Messerschmitt
+
+SECTION — ENGINEERING
+
+Eyebrow:
+ENGINEERING
+
+Heading:
+Make the electric architecture legible.
+
+Body:
+On many electric motorcycles, the powertrain becomes a concealed technical volume. Continuity takes the opposite approach.
+
+The C-01 design studies treat the battery, power electronics, motor and supporting hardware as parts of a visual system. Their placement, proportion and relationship are considered alongside the frame, body, wheels and rider position.
+
+CTA:
+Explore the engineering
+
+SECTION — DESIGN
+
+Eyebrow:
+DESIGN
+
+Heading:
+Mechanical clarity, translated for electric power.
+
+Body:
+Continuity draws from three worlds: the readable complexity of mechanical watches, the functional visual discipline of historic aviation, and the proportions of motorcycles in which the powertrain is the visual centre of the machine.
+
+The objective is not to reproduce the past. It is to carry forward the qualities that made mechanical objects understandable, purposeful and worth looking at.
+
+CTA:
+Read the design philosophy
+
+SECTION — DEVELOPMENT
+
+Eyebrow:
+CURRENT STATUS
+
+Heading:
+A digital concept, moving toward the physical world.
+
+Body:
+The C-01 currently exists as a developed digital motorcycle concept. A physical prototype has not yet been completed, and production specifications, price and launch timing have not been announced.
+
+Continuity will publish major development changes as the project advances.
+
+CTA:
+See development status
+
+HOMEPAGE FAQ
+
+What is Continuity Motors?
+Continuity Motors is an Indian electric motorcycle venture developing the C-01, a retro-influenced motorcycle platform focused on traditional proportions, visible electric engineering and enthusiast-oriented design.
+
+What is the Continuity C-01?
+The C-01 is Continuity's first electric motorcycle platform. It is currently in digital development and is expressed through two design directions: C-01 Camel and C-01 Messerschmitt.
+
+Can I buy a Continuity motorcycle today?
+No. The C-01 is not currently available for purchase. A physical prototype, production specifications, price and launch timing have not yet been announced.
+
+==================================================
+PAGE 2 — C-01 FAMILY
+URL: /c-01
+==================================================
+
+SEO title:
+C-01 | Retro Electric Motorcycle by Continuity Motors
+
+Meta description:
+Meet the Continuity C-01, a retro-influenced electric motorcycle platform with visible engineering, traditional proportions and two distinct design directions.
+
+HERO
+
+Eyebrow:
+CONTINUITY C-01
+
+H1:
+A new electric architecture for an old reason to ride.
+
+Body:
+The Continuity C-01 is a retro-influenced electric motorcycle platform currently in digital development in India.
+
+It is designed around traditional motorcycle proportions and a deliberately visible electric powertrain, with two interpretations: the classic-inspired C-01 Camel and the café-racer-influenced C-01 Messerschmitt.
+
+CTAs:
+Explore Camel
+Explore Messerschmitt
+
+SECTION — WHAT C-01 IS
+
+Heading:
+Not an electric motorcycle wearing an engine-shaped disguise.
+
+Body:
+Combustion motorcycles developed their proportions around engines, fuel tanks, exhaust systems and transmissions. Remove those components and a designer is left with a different machine.
+
+C-01 begins there.
+
+Instead of recreating a combustion engine visually, the project explores how battery modules, power electronics, motor packaging and supporting structure can create a new mechanical centre for an electric motorcycle.
+
+SECTION — ONE IDEA, TWO EXPRESSIONS
+
+Heading:
+One idea. Two expressions.
+
+Body:
+Camel and Messerschmitt are not unrelated motorcycles. They are two design directions built around the same C-01 philosophy.
+
+Both explore a visible electric architecture, familiar motorcycle proportions and a strong relationship between rider, wheels and powertrain. Their difference is in character.
+
+Camel:
+C-01 Camel takes the more upright, classic-roadster direction: calm proportions, visual balance and a traditional motorcycle stance.
+
+Messerschmitt:
+C-01 Messerschmitt takes the more focused, café-racer-influenced direction: a sharper visual attitude built around a sport-oriented expression.
+
+SECTION — ELECTRIC, VISIBLY
+
+Heading:
+The electric hardware is part of the design.
+
+Body:
+The C-01 does not treat electric components as an inconvenience to hide. Current digital studies explore how the battery, power electronics, motor and control hardware can be organized into an architecture that is understandable at a glance.
+
+This is a design principle, not a claim that the final production packaging has been fixed. Component position and specification will continue to change as engineering develops.
+
+CTA:
+How the architecture works
+
+SECTION — INFLUENCES
+
+Heading:
+Reference, not imitation.
+
+Body:
+The C-01 design language is influenced by mechanical watches, historic aviation and traditional motorcycles.
+
+From watches comes an interest in layers, visible function and readable complexity. From aviation comes disciplined instrumentation and hardware shaped by purpose. From motorcycles comes the importance of proportion: two wheels, a rider and a powertrain forming one visually coherent machine.
+
+The objective is not nostalgia.
+
+It is continuity.
+
+SECTION — CURRENT STATUS
+
+Heading:
+Where the C-01 is today.
+
+Body:
+The C-01 is currently a digital motorcycle concept in pre-physical-prototype development.
+
+No production price, verified range, verified performance figures, customer delivery date or production launch date has been announced.
+
+CTA:
+View development status
+
+C-01 FAQ
+
+Is the C-01 an electric motorcycle?
+Yes. The C-01 is being developed as an electric motorcycle platform.
+
+What is the difference between Camel and Messerschmitt?
+Both belong to the C-01 family and share the same broad design philosophy. Camel is the more upright, classic-roadster-oriented direction. Messerschmitt is the more focused, café-racer-influenced direction.
+
+Is the C-01 a production motorcycle?
+No. The C-01 is currently in digital development and a physical prototype has not yet been completed.
+
+Are the specifications final?
+No. Any specifications or dimensions shown in current concept material should be treated as development information unless Continuity explicitly identifies them as validated.
+
+==================================================
+PAGE 3 — C-01 CAMEL
+URL: /c-01/camel
+==================================================
+
+SEO title:
+C-01 Camel | Electric Roadster | Continuity Motors
+
+Meta description:
+The Continuity C-01 Camel is a classic-inspired electric roadster concept combining traditional motorcycle proportions with a visible electric powertrain.
+
+HERO
+
+Eyebrow:
+CONTINUITY C-01
+
+H1:
+C-01 Camel
+
+Descriptor:
+Classic-inspired electric roadster
+
+Body:
+The Continuity C-01 Camel is the more upright, classic-roadster-oriented expression of the C-01 electric motorcycle platform.
+
+Currently in digital development, Camel combines traditional motorcycle proportions with an electric architecture designed to remain visually present rather than disappear beneath bodywork.
+
+Primary CTA:
+Follow development
+
+Secondary CTA:
+Explore the machine
+
+SECTION — FORM
+
+Eyebrow:
+FORM
+
+Heading:
+A familiar silhouette, built around unfamiliar hardware.
+
+Body:
+Camel begins with the visual balance of a traditional roadster: a clear relationship between wheels, rider, frame and powertrain.
+
+The objective is not to imitate a combustion motorcycle. It is to preserve the clarity of a motorcycle silhouette while allowing the electric system to occupy the centre of the composition honestly.
+
+SECTION — ENGINEERING
+
+Eyebrow:
+ENGINEERING
+
+Heading:
+The powertrain belongs in the picture.
+
+Body:
+The current Camel studies expose the logic of the electric architecture rather than reducing it to a featureless enclosure.
+
+Battery volume, power electronics, motor packaging and supporting components are treated as visible parts of the motorcycle's visual hierarchy. Their exact production form is not yet finalized.
+
+CTA:
+Explore C-01 engineering
+
+SECTION — DETAIL
+
+Eyebrow:
+DETAIL
+
+Heading:
+Designed to be read up close.
+
+Body:
+Camel uses detail to reinforce the larger idea of mechanical legibility. Surfaces, component boundaries, instrumentation and hardware are intended to feel purposeful rather than decorative.
+
+The influence of mechanical watches is less about luxury ornament and more about readable construction: separate parts remain visually understandable as parts of a system.
+
+SECTION — EVERY ANGLE
+
+Eyebrow:
+VIEWS
+
+Heading:
+Proportion has to survive every angle.
+
+Body:
+A motorcycle cannot rely on one hero view.
+
+The C-01 Camel is being developed through side, front, rear, top and three-quarter studies so the relationship between wheels, body, rider space and electric hardware remains coherent around the entire machine.
+
+SECTION — CONTEXT
+
+Eyebrow:
+CONTEXT
+
+Heading:
+Historic influence. Contemporary machine.
+
+Body:
+Camel's visual world draws from historic aviation and industrial engineering without attempting to reproduce a period motorcycle.
+
+The reference is functional: hardware with clear purpose, instrumentation that can be read, and a machine whose construction remains visible.
+
+SECTION — RELATIONSHIP TO MESSERSCHMITT
+
+Heading:
+The roadster side of C-01.
+
+Body:
+Camel and Messerschmitt share the same underlying C-01 idea but express it differently.
+
+Camel emphasizes an upright, balanced roadster character. Messerschmitt takes the same philosophy into a more focused café-racer-influenced direction.
+
+CTA:
+Explore C-01 Messerschmitt
+
+SECTION — STATUS
+
+Heading:
+Current development status
+
+Body:
+C-01 Camel is currently a digital motorcycle concept.
+
+A physical prototype has not yet been completed, and production specifications, pricing and availability have not been announced.
+
+CTA:
+See development status
+
+CAMEL FAQ
+
+What is the C-01 Camel?
+The Continuity C-01 Camel is a classic-inspired electric roadster concept and one of two design directions in the C-01 family.
+
+Is the C-01 Camel a retro motorcycle?
+Camel is retro-influenced rather than a reproduction of a historic motorcycle. It uses familiar roadster proportions while developing a visual language around an electric powertrain.
+
+Is the C-01 Camel available to buy?
+No. Camel is currently in digital development and is not available for purchase.
+
+Are the specifications shown in the concept art final?
+No. Unless a figure is explicitly described by Continuity as validated, numbers shown in concept material should be treated as development information rather than production specifications.
+
+==================================================
+PAGE 4 — C-01 MESSERSCHMITT
+URL: /c-01/messerschmitt
+==================================================
+
+SEO title:
+C-01 Messerschmitt | Electric Café Racer | Continuity Motors
+
+Meta description:
+The Continuity C-01 Messerschmitt is a café-racer-influenced electric motorcycle concept built around visible engineering and traditional proportions.
+
+HERO
+
+Eyebrow:
+CONTINUITY C-01
+
+H1:
+C-01 Messerschmitt
+
+Descriptor:
+Café-racer-influenced electric motorcycle
+
+Body:
+The Continuity C-01 Messerschmitt is the more focused, café-racer-influenced expression of the C-01 electric motorcycle platform.
+
+Currently in digital development, Messerschmitt applies the C-01's visible electric architecture to a sharper, more sport-oriented stance while preserving a clear motorcycle silhouette.
+
+Primary CTA:
+Follow development
+
+Secondary CTA:
+Explore the machine
+
+SECTION — FORM
+
+Eyebrow:
+FORM
+
+Heading:
+A more focused interpretation of the same architecture.
+
+Body:
+Messerschmitt shifts the C-01 toward a more compact and visually forward posture.
+
+Its café-racer influence comes from stance and proportion rather than surface decoration. The design aims to create a clear relationship between rider, wheels and electric powertrain while giving the motorcycle a more focused visual attitude than Camel.
+
+SECTION — ENGINEERING
+
+Eyebrow:
+ENGINEERING
+
+Heading:
+Electric hardware as mechanical identity.
+
+Body:
+The current Messerschmitt studies treat the electric system as part of the motorcycle's visual structure.
+
+Battery volume, power electronics, motor packaging and supporting components are intentionally legible instead of being concealed inside one undifferentiated enclosure. Their exact production form is not yet finalized.
+
+CTA:
+Explore C-01 engineering
+
+SECTION — DETAIL
+
+Eyebrow:
+DETAIL
+
+Heading:
+Precision without ornament for ornament's sake.
+
+Body:
+Messerschmitt uses the same mechanical-design principles as Camel but applies them to a more concentrated visual character.
+
+The influence of watches and aviation appears through layering, instrumentation, component boundaries and the idea that functional parts should remain understandable rather than being visually erased.
+
+SECTION — EVERY ANGLE
+
+Eyebrow:
+VIEWS
+
+Heading:
+The stance has to work in three dimensions.
+
+Body:
+The C-01 Messerschmitt is being developed through side, front, rear, top and three-quarter studies so its café-racer-influenced stance remains coherent beyond a single presentation view.
+
+These studies also help evaluate how rider space, wheel relationship and electric component mass work together.
+
+SECTION — CONTEXT
+
+Eyebrow:
+CONTEXT
+
+Heading:
+Aviation as discipline, not costume.
+
+Body:
+Historic aviation influences the C-01 through visual discipline: purposeful hardware, compact instrumentation and mechanisms whose function remains apparent.
+
+Messerschmitt uses that reference as a design language for a contemporary electric motorcycle, not as an attempt to reproduce a historic machine.
+
+SECTION — RELATIONSHIP TO CAMEL
+
+Heading:
+The café-racer side of C-01.
+
+Body:
+Messerschmitt and Camel share the same underlying C-01 philosophy but express it differently.
+
+Messerschmitt emphasizes a more focused, café-racer-influenced attitude. Camel takes the same visible-electric idea into a more upright classic-roadster direction.
+
+CTA:
+Explore C-01 Camel
+
+SECTION — STATUS
+
+Heading:
+Current development status
+
+Body:
+C-01 Messerschmitt is currently a digital motorcycle concept.
+
+A physical prototype has not yet been completed, and production specifications, pricing and availability have not been announced.
+
+CTA:
+See development status
+
+MESSERSCHMITT FAQ
+
+What is the C-01 Messerschmitt?
+The Continuity C-01 Messerschmitt is a café-racer-influenced electric motorcycle concept and one of two design directions in the C-01 family.
+
+Why describe it as café-racer influenced?
+The description refers to the motorcycle's intended stance, proportion and more focused visual attitude. Final rider geometry and production specification have not yet been validated on a physical prototype.
+
+Is the C-01 Messerschmitt available to buy?
+No. Messerschmitt is currently in digital development and is not available for purchase.
+
+Are the specifications in the concept art final?
+No. Unless a figure is explicitly identified by Continuity as validated, numbers shown in concept material should be treated as development information rather than production specifications.
+
+==================================================
+PAGE 5 — ENGINEERING
+URL: /engineering
+==================================================
+
+SEO title:
+C-01 Engineering | Electric Motorcycle Architecture | Continuity
+
+Meta description:
+Explore the engineering philosophy behind Continuity C-01: visible electric architecture, component packaging and the relationship between battery, electronics and motor.
+
+HERO
+
+Eyebrow:
+C-01 ENGINEERING
+
+H1:
+Engineering, made visible.
+
+Body:
+The Continuity C-01 is being developed around a simple engineering-design principle: the electric powertrain should be understandable as part of the motorcycle, not treated as a technical volume that must be visually erased.
+
+The current digital concept explores the relationship between battery packaging, power electronics, motor, controls, charging hardware, structure and rider space.
+
+Final component selection and packaging remain under development.
+
+SECTION — DIFFERENT ARCHITECTURE
+
+Heading:
+Different source of power. Different architecture.
+
+Body:
+A combustion motorcycle organizes itself around an engine, fuel system, gearbox and exhaust.
+
+An electric motorcycle replaces much of that system with a high-voltage battery, power electronics, an electric motor and the hardware required to control, charge, cool and protect them.
+
+That change creates new freedom, but it also removes the familiar visual centre of the motorcycle.
+
+C-01 treats the new components as an architecture worth designing deliberately.
+
+SECTION — BATTERY
+
+Heading:
+Battery
+
+Body:
+The battery stores the electrical energy used to drive the motorcycle. Its size, mass, voltage, cooling requirements and physical location strongly influence the motorcycle around it.
+
+For C-01, battery packaging is being considered not only as an engineering constraint but also as part of the machine's proportion and visual mass.
+
+Capacity, cell chemistry and production packaging have not yet been finalized.
+
+SECTION — POWER ELECTRONICS
+
+Heading:
+Power electronics
+
+Body:
+Electric motorcycles require electronics that control how energy moves between the battery and motor.
+
+Depending on the final architecture, this system can include an inverter or motor controller, battery-management hardware, DC/DC conversion, charging electronics, protection hardware and low-voltage control systems.
+
+C-01 explores how these components can remain visually legible without compromising the engineering requirements that will ultimately determine their form.
+
+SECTION — MOTOR AND DRIVE
+
+Heading:
+Motor and drive
+
+Body:
+The electric motor converts electrical energy into rotational motion. That motion must then reach the rear wheel through the motorcycle's final-drive system.
+
+The final C-01 motor, reduction architecture, gearing strategy and performance figures have not yet been validated on a physical prototype.
+
+Current digital work is focused on packaging and proportion rather than publishing untested performance claims.
+
+SECTION — CONTROL
+
+Heading:
+Control is part of the machine.
+
+Body:
+An electric motorcycle is also a network of sensors, controllers and low-voltage systems.
+
+Throttle input, battery management, motor control, charging, lighting, displays and safety logic all have to communicate reliably.
+
+Continuity's design work treats these systems as engineering first; their visual treatment follows from what they need to do.
+
+SECTION — VISIBLE DOES NOT MEAN UNPROTECTED
+
+Heading:
+Visible does not mean exposed without purpose.
+
+Body:
+Visible engineering is not a decision to leave sensitive systems unprotected.
+
+Production components still need structural support, environmental protection, thermal management and electrical safety.
+
+The design objective is different: where possible, make the boundaries and relationships between systems visually understandable instead of covering the entire architecture with one anonymous surface.
+
+SECTION — STATUS
+
+Heading:
+Concept architecture, not final specification.
+
+Body:
+The engineering imagery on this site represents current concept packaging and design intent.
+
+It should not be interpreted as a homologated or production-ready electrical architecture.
+
+Verified specifications will only be published when they are supported by the appropriate level of physical engineering and testing.
+
+==================================================
+PAGE 6 — DESIGN
+URL: /design
+==================================================
+
+SEO title:
+C-01 Design Philosophy | Continuity Motors
+
+Meta description:
+See how Continuity combines traditional motorcycle proportion, visible electric engineering, mechanical watches and historic aviation in the C-01 design language.
+
+HERO
+
+Eyebrow:
+CONTINUITY DESIGN
+
+H1:
+Design the machine around what it is.
+
+Body:
+The C-01 does not begin by asking how to make an electric motorcycle look like a combustion motorcycle.
+
+It asks a different question:
+
+Which qualities made traditional motorcycles mechanically legible, visually balanced and worth studying—and how can those qualities survive when the powertrain becomes electric?
+
+SECTION — RETRO
+
+Heading:
+Retro is a reference, not a costume.
+
+Body:
+Continuity uses familiar motorcycle proportions because they create a clear relationship between rider, wheels and powertrain.
+
+The objective is not to recreate a historic motorcycle with an electric motor hidden inside it.
+
+The objective is to preserve visual clarity while allowing the electric architecture to develop its own identity.
+
+SECTION — MECHANICAL WATCHES
+
+Eyebrow:
+INFLUENCE 01
+
+Heading:
+Readable complexity.
+
+Body:
+A mechanical watch can contain enormous complexity without becoming visually anonymous.
+
+Bridges, gears, fasteners, layers and interfaces remain legible as parts of a larger system.
+
+Continuity takes that principle rather than the ornament: components should feel related, purposeful and understandable at close range.
+
+SECTION — HISTORIC AVIATION
+
+Eyebrow:
+INFLUENCE 02
+
+Heading:
+Function with visual discipline.
+
+Body:
+Historic aircraft and aviation instruments were shaped by requirements: packaging, visibility, weight, control and maintenance.
+
+The C-01 borrows from that visual discipline—compact instrumentation, explicit interfaces and hardware that looks connected to a function—without attempting to reproduce a historic aircraft or military object.
+
+SECTION — TRADITIONAL MOTORCYCLES
+
+Eyebrow:
+INFLUENCE 03
+
+Heading:
+The powertrain as the visual centre.
+
+Body:
+On many traditional motorcycles, the engine is both a mechanical system and the visual centre of the machine.
+
+Its scale helps organize the frame, tank, seat and wheels around it.
+
+Electric motorcycles remove that familiar object.
+
+Continuity's design challenge is to create a new centre of gravity from the architecture that replaces it.
+
+SECTION — VISIBLE ARCHITECTURE
+
+Heading:
+Do not hide the reason the motorcycle is different.
+
+Body:
+Battery packaging, power electronics and motor hardware are not visual defects to erase.
+
+They are the systems that make the motorcycle electric.
+
+C-01 explores how their boundaries, surfaces and relationships can contribute to the identity of the motorcycle while still respecting the protection and engineering requirements of a real vehicle.
+
+SECTION — TWO CHARACTERS
+
+Heading:
+One design language. Two characters.
+
+Camel:
+C-01 Camel emphasizes balance, upright roadster proportion and a calmer visual rhythm.
+
+Messerschmitt:
+C-01 Messerschmitt concentrates the same principles into a more focused, café-racer-influenced stance.
+
+==================================================
+PAGE 7 — DEVELOPMENT
+URL: /development
+==================================================
+
+SEO title:
+C-01 Development Status | Continuity Motors
+
+Meta description:
+See the current development status of the Continuity C-01, including prototype, testing, specifications, pricing and availability.
+
+HERO
+
+Eyebrow:
+LAST UPDATED — OCTOBER 2026
+
+H1:
+Development, in public.
+
+Body:
+The Continuity C-01 is currently a digital motorcycle concept in pre-physical-prototype development.
+
+The imagery on this website represents design and packaging work, not a completed physical motorcycle.
+
+A rideable prototype has not yet been completed.
+
+CURRENT STATUS TABLE
+
+C-01 design concept — Developed digitally
+Camel design direction — Developed digitally
+Messerschmitt design direction — Developed digitally
+Concept component packaging — In digital development
+Physical prototype — Not yet completed
+Ride testing — Not yet started
+Production specifications — Not finalized
+Verified real-world range — Not available
+Verified production power — Not available
+Verified top speed — Not available
+Charging specification — Not finalized
+Production price — Not announced
+Launch date — Not announced
+Customer deliveries — Not announced
+Availability — Not for sale
+
+SECTION — WHAT EXISTS TODAY
+
+Heading:
+What exists today
+
+Body:
+Current C-01 development includes the product identity, digital motorcycle form, multi-view design studies, visual component studies, concept packaging work and the two established design directions represented by Camel and Messerschmitt.
+
+These assets allow Continuity to test proportion, product identity, visual architecture and market response before representing the motorcycle as physically validated.
+
+SECTION — WHAT HAS NOT BEEN VALIDATED
+
+Heading:
+What has not been validated yet
+
+Body:
+No current Continuity image should be interpreted as proof of a running physical prototype.
+
+Real-world range, performance, braking, thermal behaviour, durability, charging performance, ride quality, production mass and production cost require physical engineering and testing.
+
+Those results will not be presented as facts until that work exists.
+
+SECTION — CONCEPT NUMBERS
+
+Heading:
+Concept figures are not test results.
+
+Body:
+Some development artwork may contain dimensions, component labels or numerical targets used during design exploration.
+
+Unless Continuity explicitly identifies a figure as validated, it should be read as concept or development information rather than a final production specification.
+
+SECTION — CANONICAL STATUS
+
+Heading:
+The source of truth will change as the motorcycle does.
+
+Body:
+This page is the canonical source for the current public status of the C-01.
+
+When a physical prototype is completed, testing begins, specifications are validated or commercial plans are announced, this page will be updated to reflect the new state of the project.
+
+DEVELOPMENT FAQ
+
+Does a physical C-01 prototype exist?
+A completed rideable physical C-01 prototype has not yet been announced. The C-01 currently exists as a developed digital concept.
+
+Can I pre-order it?
+No pre-order or reservation programme is currently announced.
+
+What is the price?
+A production price has not been announced.
+
+What is its range?
+Continuity has not published a verified real-world or production range figure.
+
+When will it launch?
+A production launch date has not been announced.
+
+==================================================
+PAGE 8 — ABOUT
+URL: /about
+==================================================
+
+SEO title:
+About Continuity Motors | Indian Electric Motorcycle Venture
+
+Meta description:
+Continuity Motors is an Indian electric motorcycle venture developing the C-01 around visible engineering, traditional proportions and enthusiast-focused design.
+
+HERO
+
+Eyebrow:
+ABOUT CONTINUITY
+
+H1:
+Motorcycles should still look like machines.
+
+Body:
+Continuity Motors is an Indian electric motorcycle venture developing the C-01, a retro-influenced motorcycle platform built around visible electric engineering and traditional motorcycle proportions.
+
+The project begins with a simple belief:
+
+Electrification does not require the motorcycle to become visually anonymous.
+
+SECTION — WHY CONTINUITY EXISTS
+
+Heading:
+A different question about electric motorcycles.
+
+Body:
+Much of the electric-vehicle conversation begins with range, charging and efficiency.
+
+Those things matter, but they do not fully explain why people care about motorcycles.
+
+Motorcycles are also objects people inspect, understand, personalize and form attachments to.
+
+Continuity exists to explore how that relationship can continue when the internal-combustion engine disappears.
+
+SECTION — INDIA FIRST
+
+Heading:
+Developed in India. Intended to travel further.
+
+Body:
+Continuity is beginning with India, one of the world's most important motorcycle markets and a place where motorcycles remain part of everyday mobility as well as enthusiast culture.
+
+The long-term ambition is broader: develop a motorcycle identity that can make sense to riders beyond India without losing the point of view that created it.
+
+SECTION — C-01
+
+Heading:
+The first platform.
+
+Body:
+C-01 is the first Continuity motorcycle platform.
+
+It is currently represented by two digital design directions: C-01 Camel and C-01 Messerschmitt.
+
+Both explore the same central idea—electric architecture as visible mechanical identity—but apply it to different motorcycle characters.
+
+SECTION — DEVELOPMENT HONESTY
+
+Heading:
+Show what is real. Label what is not yet real.
+
+Body:
+Continuity uses highly resolved digital imagery to develop and communicate the motorcycle before a physical prototype exists.
+
+That makes clarity important.
+
+Concept imagery, development targets and physically validated results will be described as different things throughout this website.
+
+SECTION — CONTACT
+
+Heading:
+Contact
+
+Body:
+For collaboration, media and general enquiries:
+
+[PUBLIC CONTACT EMAIL]
+
+Optional:
+Instagram — [URL]
+LinkedIn — [URL]
+YouTube — [URL]
+
+==================================================
+PAGE 9 — JOURNAL INDEX
+URL: /journal
+==================================================
+
+SEO title:
+Continuity Journal | Electric Motorcycle Design & Engineering
+
+Meta description:
+Essays and explainers from Continuity on electric motorcycle design, engineering, café racers, visible powertrains and motorcycle culture.
+
+Eyebrow:
+NOTES ON THE MACHINE
+
+H1:
+Journal
+
+Body:
+The Continuity Journal explores the questions behind the C-01: what makes a motorcycle mechanically legible, how electric architecture changes proportion, what defines a café racer, and what an enthusiast motorcycle can become after the engine disappears.
+
+These articles are educational material and design thinking, not substitutes for validated C-01 production specifications.
+
+Categories:
+Design
+Engineering
+Development
+Motorcycle Culture
+
+Launch articles:
+1. What Is a Retro Electric Motorcycle?
+2. What Makes an Electric Café Racer?
+3. Can an Electric Motorcycle Still Feel Mechanical?
+4. Why Expose an Electric Motorcycle Powertrain?
+5. How Does an Electric Motorcycle Powertrain Work?
+
+==================================================
+JOURNAL ARTICLE 1
+URL: /journal/what-is-a-retro-electric-motorcycle
+==================================================
+
+SEO title:
+What Is a Retro Electric Motorcycle? | Continuity Journal
+
+Meta description:
+A retro electric motorcycle combines modern electric propulsion with proportions, stance and design references associated with traditional motorcycles.
+
+H1:
+What is a retro electric motorcycle?
+
+Opening:
+A retro electric motorcycle combines a modern electric powertrain with design ideas associated with traditional motorcycles.
+
+The useful part of the definition is not age.
+
+It is reference.
+
+Retro does not mean reproduction
+
+The weakest interpretation of retro design is cosmetic: apply a round headlight, stitched seat and old-fashioned paint to a modern platform.
+
+A stronger interpretation starts with proportion.
+
+Traditional motorcycles often make the relationship between the front wheel, rear wheel, rider and powertrain immediately readable. The powertrain occupies the centre. The fuel tank helps define the upper mass. The seat and tail establish the rider's position. The machine can be understood from a side view.
+
+An electric motorcycle changes those ingredients.
+
+There may be no fuel tank, combustion engine, exhaust or multi-speed gearbox.
+
+The challenge is therefore not simply to copy a historic silhouette. It is to decide which visual relationships still matter.
+
+What makes an electric motorcycle feel classic?
+
+There is no single formula.
+
+Clear motorcycle proportions, a visible relationship between the rider and both wheels, restrained bodywork, legible instrumentation and understandable mechanical boundaries can all contribute.
+
+None of those characteristics requires pretending that the motorcycle has a combustion engine.
+
+Electric hardware can become the identity
+
+A battery, inverter and electric motor are real systems.
+
+Hiding all of them behind one large enclosure is one design option, but it is not the only one.
+
+A retro-influenced electric motorcycle can use the discipline of older machines—visible systems, clear layers and readable construction—while allowing the new hardware to look like what it is.
+
+Where Continuity fits
+
+The Continuity C-01 is one interpretation of that idea.
+
+It is currently a digital motorcycle concept, not a production motorcycle.
+
+C-01 uses traditional motorcycle proportions as a reference while exploring how electric components can create a new visual centre.
+
+Its two current design directions are the classic-roadster-oriented C-01 Camel and the café-racer-influenced C-01 Messerschmitt.
+
+The objective is not to reproduce a motorcycle from the past.
+
+It is to preserve the qualities that made those machines visually understandable while changing the source of power.
+
+==================================================
+JOURNAL ARTICLE 2
+URL: /journal/what-makes-an-electric-cafe-racer
+==================================================
+
+SEO title:
+What Makes an Electric Café Racer? | Continuity Journal
+
+Meta description:
+An electric café racer adapts café-racer stance, proportion and rider focus to an electric powertrain without needing to imitate a combustion engine.
+
+H1:
+What makes an electric café racer?
+
+Opening:
+An electric café racer is not defined by a battery, a round headlight or a shortened seat on their own.
+
+The useful definition starts with the same qualities that make any café-racer-influenced motorcycle recognizable:
+
+stance, proportion and focus.
+
+The original idea was reduction
+
+Café-racer culture developed around motorcycles altered toward a more focused road-riding character.
+
+Over time, a lower or more forward rider posture, compact tail, visually lean body and emphasis on the relationship between rider and machine became associated with the category.
+
+Electric propulsion adds another change: the engine, exhaust and fuel system that historically occupied much of the motorcycle disappear.
+
+Electric architecture changes the centre
+
+On a combustion café racer, the engine is usually a major visual anchor.
+
+On an electric motorcycle, the centre may instead be formed by the battery, power electronics, motor and supporting structure.
+
+A convincing electric café racer therefore has to solve more than styling.
+
+Rider position, wheel relationship, body mass, seat, tail and electric component mass all have to form one coherent motorcycle.
+
+Café-racer influence can survive without combustion
+
+There is no requirement that a café-racer-influenced motorcycle reproduce a historic engine or exhaust layout.
+
+Its identity can survive through proportion, visual tension and a focused relationship between rider and machine.
+
+Electric power changes the architecture.
+
+It does not erase the design logic.
+
+The C-01 Messerschmitt
+
+The Continuity C-01 Messerschmitt is currently a digital concept exploring this territory.
+
+It takes the visible-electric architecture of the C-01 platform and applies it to a more focused, café-racer-influenced stance than the C-01 Camel.
+
+Because no rideable physical prototype has yet been completed, Continuity does not currently present its rider geometry or performance as validated production specifications.
+
+==================================================
+JOURNAL ARTICLE 3
+URL: /journal/can-electric-motorcycles-feel-mechanical
+==================================================
+
+SEO title:
+Can an Electric Motorcycle Still Feel Mechanical? | Continuity
+
+Meta description:
+Electric motorcycles can preserve mechanical character through visible causality, controls, materials, proportion and understandable engineering without imitating combustion.
+
+H1:
+Can an electric motorcycle still feel mechanical?
+
+Opening:
+Yes—but only if “mechanical” means more than the presence of a combustion engine.
+
+A motorcycle feels mechanical when the rider can understand a relationship between input, structure and response.
+
+Combustion engines make that relationship obvious through sound, heat, vibration, gears, exhaust and visible moving systems.
+
+Electric motorcycles remove many of those signals.
+
+That does not mean they must become anonymous appliances.
+
+Mechanical character begins with causality
+
+A throttle input changes motor torque.
+
+Braking changes speed and load transfer.
+
+Suspension moves. Tyres deform. Components heat and cool.
+
+Energy moves from a battery through power electronics into a motor and then to the rear wheel.
+
+Those are physical processes.
+
+A designer can either hide almost all evidence of them or make the machine's architecture easier to understand.
+
+Visibility changes perception
+
+When a rider can identify major systems and understand how they relate spatially, the motorcycle becomes more legible.
+
+That does not mean exposing unprotected high-voltage components.
+
+Safety, sealing, cooling and structure come first.
+
+It means avoiding unnecessary visual anonymity.
+
+Controls matter too
+
+Mechanical character is also created through the controls a rider touches.
+
+Throttle calibration, brake feel, suspension response, switchgear, instrumentation and the physical relationship between bars, pegs and seat all contribute to whether a motorcycle feels direct or distant.
+
+Those qualities have to be engineered physically.
+
+They cannot be proven by a render.
+
+Do not fake combustion
+
+One way to make an electric motorcycle feel familiar would be to imitate the appearance or behaviour of a combustion motorcycle even when the function is not there.
+
+Continuity is interested in another path:
+
+preserve clarity, precision and involvement without pretending the powertrain is something it is not.
+
+The C-01 is still in digital development, so the final riding experience remains a question to be answered by physical prototypes and testing.
+
+==================================================
+JOURNAL ARTICLE 4
+URL: /journal/visible-electric-motorcycle-powertrain
+==================================================
+
+SEO title:
+Why Expose an Electric Motorcycle Powertrain? | Continuity
+
+Meta description:
+Why visible batteries, motors and power electronics can become part of electric motorcycle design without compromising the need for protection and engineering.
+
+H1:
+Why expose an electric motorcycle powertrain?
+
+Opening:
+The phrase visible powertrain can be misunderstood.
+
+It does not mean leaving high-voltage hardware unprotected.
+
+It means designing the motorcycle so its important systems remain visually understandable rather than hiding the entire electric architecture behind one anonymous shell.
+
+Traditional motorcycles made the powertrain obvious
+
+On many traditional motorcycles, the engine occupies the visual centre of the machine.
+
+The frame wraps around it. The exhaust leaves it. The fuel tank sits above it.
+
+A rider can often understand the basic architecture simply by looking.
+
+Electric systems have their own architecture
+
+An electric motorcycle still contains connected systems: a traction battery, battery-management hardware, power electronics, motor, charging system, low-voltage electronics, protection systems and final drive.
+
+Those systems create their own packaging logic.
+
+The design opportunity is to acknowledge that logic.
+
+Protection comes first
+
+A production electric motorcycle must protect its electrical systems from impact, water, debris, heat, vibration and unintended contact.
+
+High-voltage safety cannot be traded for appearance.
+
+Visible engineering therefore means making the form and relationships of protected systems legible—not exposing dangerous electrical elements.
+
+Why Continuity is interested
+
+Continuity treats visible electric architecture as a way to give the C-01 a mechanical centre without disguising the battery or electronics as a combustion engine.
+
+The current C-01 imagery is still concept work.
+
+Final enclosure design, cooling, service strategy, structural mounting and electrical protection will depend on physical engineering.
+
+But the design principle can be established early:
+
+make the electric motorcycle look intentionally electric, without making it visually anonymous.
+
+==================================================
+JOURNAL ARTICLE 5
+URL: /journal/how-electric-motorcycle-powertrain-works
+==================================================
+
+SEO title:
+How Does an Electric Motorcycle Powertrain Work? | Continuity
+
+Meta description:
+A plain-language guide to how an electric motorcycle uses a battery, inverter, motor, controls and final drive to turn stored electrical energy into motion.
+
+H1:
+How does an electric motorcycle powertrain work?
+
+Opening:
+An electric motorcycle powertrain turns stored electrical energy into motion.
+
+The exact architecture differs between manufacturers, but most electric motorcycles contain the same broad groups of systems: a traction battery, battery management, power electronics, an electric motor, control systems and a mechanical path from the motor to the rear wheel.
+
+1 — The battery stores energy
+
+The high-voltage traction battery stores the energy used to propel the motorcycle.
+
+Its capacity influences potential range, but actual range also depends on speed, rider behaviour, aerodynamics, mass, temperature and many other factors.
+
+2 — The BMS watches the battery
+
+A battery-management system, usually called a BMS, monitors the condition of the battery.
+
+Depending on the architecture, it can monitor voltage, temperature, current and other pack conditions while helping keep the battery inside safe operating limits.
+
+3 — Power electronics control the motor
+
+The battery stores direct-current electrical energy.
+
+An inverter or motor controller manages the electrical power delivered to the motor and controls how the motor produces torque.
+
+4 — The motor creates rotation
+
+The electric motor converts electrical energy into mechanical rotation.
+
+Different motorcycles use different motor types, cooling systems, reduction ratios and packaging strategies.
+
+5 — The final drive turns the wheel
+
+The motor's output must reach the rear wheel.
+
+A motorcycle may use a reduction stage and chain, belt, gears or another final-drive arrangement depending on its design.
+
+6 — Low-voltage systems run the rest
+
+Lighting, displays, control electronics and accessories normally operate at a lower voltage than the traction system.
+
+Depending on the architecture, a DC/DC converter can provide power for those systems.
+
+7 — Charging puts energy back
+
+During charging, energy from an external source is managed so the battery can be replenished safely.
+
+Connector, voltage, rate and charging architecture vary between motorcycles.
+
+How this relates to C-01
+
+The Continuity C-01 is still in digital development, so its final battery, inverter, motor, cooling, charging and final-drive specifications have not been validated.
+
+The design work shown by Continuity should therefore be read as concept architecture and packaging intent, not as a published production electrical specification.
+
+==================================================
+PRIVACY PAGE
+URL: /privacy
+==================================================
+
+IMPORTANT:
+Legal review is required before final publication.
+
+SEO title:
+Privacy | Continuity Motors
+
+H1:
+Privacy
+
+Opening:
+Continuity uses a limited amount of data to operate this website, understand how people use it and manage voluntary early-access registrations.
+
+We aim to collect only information that has a clear purpose.
+
+Necessary website data:
+The site may process technical request and security information required to serve pages, prevent abuse and operate features such as forms and Cloudflare Turnstile.
+
+Analytics:
+Where permitted and where you have provided any required consent, Continuity may use Google Analytics and Microsoft Clarity to understand website traffic, navigation, interaction patterns and product interest.
+
+Analytics data must not intentionally contain the content of private form fields such as your email address.
+
+First-party experiment data:
+Continuity may record first-party interaction events such as product-page views, section engagement, product switching, image interactions and early-access conversion events.
+
+This information is used to evaluate the website and understand interest in the C-01 design directions.
+
+Early access:
+If you voluntarily join early access, Continuity stores the email address you provide together with information required to manage your registration and consent.
+
+Your choices:
+Where analytics consent is required, you can accept or reject optional analytics through the site's privacy controls.
+
+You can unsubscribe from email updates using the unsubscribe option in any future message.
+
+Still required:
+[PRIVACY EMAIL]
+[LEGAL ENTITY]
+[BUSINESS ADDRESS IF REQUIRED]
+[RETENTION PERIODS]
+[FINAL JURISDICTION-SPECIFIC LEGAL REVIEW]
+
+==================================================
+TERMS PAGE
+URL: /terms
+==================================================
+
+IMPORTANT:
+Legal review is required before final publication.
+
+SEO title:
+Website Terms | Continuity Motors
+
+H1:
+Website terms
+
+Core copy:
+This website presents Continuity Motors, the C-01 project and related development material.
+
+The motorcycles shown on this website are currently development concepts unless explicitly stated otherwise.
+
+Concept imagery, design targets, dimensions and technical information may change as engineering develops.
+
+Nothing on this website constitutes an offer to sell a motorcycle, a confirmed production specification, a guarantee of future availability or a promise of a specific launch date unless Continuity explicitly states otherwise.
+
+Visual assets, product names, written material and other original content on this site are protected by applicable intellectual-property rights.
+
+Third-party names and trademarks remain the property of their respective owners. References to external products or design categories do not imply affiliation or endorsement.
+
+Still required:
+[LEGAL ENTITY]
+[GOVERNING LAW]
+[CONTACT DETAILS]
+[LEGAL REVIEW]
+
+==================================================
+404 PAGE
+==================================================
+
+Heading:
+This road does not exist.
+
+Body:
+The page may have moved, or the address may be incorrect.
+
+Buttons:
+Return home
+Explore C-01
+
+==================================================
+CANONICAL FACTS FOR SEARCH + AI RETRIEVAL
+==================================================
+
+What is Continuity Motors?
+Continuity Motors is an Indian electric motorcycle venture developing the C-01, a retro-influenced electric motorcycle platform focused on traditional proportions and visible electric engineering.
+
+What is the Continuity C-01?
+The Continuity C-01 is a retro-influenced electric motorcycle platform currently in digital pre-prototype development in India.
+
+What is C-01 Camel?
+The Continuity C-01 Camel is the classic-roadster-oriented design direction of the C-01 electric motorcycle platform.
+
+What is C-01 Messerschmitt?
+The Continuity C-01 Messerschmitt is the café-racer-influenced design direction of the C-01 electric motorcycle platform.
+
+Can you buy the C-01?
+No. The Continuity C-01 is not currently available for purchase, and a production price or launch date has not been announced.
+
+Does a physical prototype exist?
+A completed rideable physical C-01 prototype has not yet been announced. The project currently exists as a developed digital concept.
+
+What does visible electric powertrain mean?
+Continuity uses “visible electric powertrain” to describe a design approach in which the battery, power electronics, motor and related systems remain visually understandable parts of the motorcycle's architecture instead of being hidden behind one anonymous enclosure.
+
+==================================================
+INTERNAL LINK COPY
+==================================================
+
+Use descriptive links such as:
+Explore the C-01 electric motorcycle platform
+Explore C-01 Camel
+Explore C-01 Messerschmitt
+See how the C-01 electric architecture works
+Read the Continuity design philosophy
+See current C-01 development status
+What is a retro electric motorcycle?
+What makes an electric café racer?
+How does an electric motorcycle powertrain work?
+
+Avoid overusing generic “Learn more”.
+
+==================================================
+CONTENT THAT MUST NOT BE INVENTED
+==================================================
+
+Do not guess:
+Production price
+Expected price presented as fact
+Verified range
+Verified top speed
+Verified acceleration
+Verified power
+Verified torque
+Charging time
+Battery chemistry
+Production battery capacity
+Kerb weight
+Final dimensions
+Production location
+Launch date
+Customer delivery date
+Warranty
+Service network
+Reservation amount
+Homologation status
+Road-legal status
+Founder biography not supplied by founder
+Investor claims
+Number of employees
+Manufacturing partners
+Supplier names
+
+==================================================
+INFORMATION STILL REQUIRED FROM CONTINUITY
+==================================================
+
+1. Final domain name
+2. Public contact email
+3. Privacy/contact email
+4. Legal entity name, if one exists
+5. Registered/business address if required
+6. Social profile URLs
+7. Final public capitalization/spelling of company name
+8. Trademark/name clearance for C-01, Camel and Messerschmitt
+9. Confirm whether “India first. Built with a wider world in mind.” is acceptable public positioning
+10. Confirm whether early-access email is product development updates only or broader marketing

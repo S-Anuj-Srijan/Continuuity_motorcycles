@@ -1,0 +1,32 @@
+/* Continuity Motors — Dark Heritage Engineering
+   Recommended v1 colour tokens */
+
+:root {
+  --color-bg: #090B0A;
+  --color-surface: #151713;
+  --color-surface-green: #18251F;
+  --color-surface-green-raised: #22342B;
+
+  --color-text: #E5DACD;
+  --color-text-muted: #948A81;
+  --color-aluminium: #B8B6AF;
+
+  --color-brass: #B58A55;
+  --color-copper: #C86732;
+  --color-leather: #4A3026;
+
+  --color-border: #3A352F;
+  --color-black: #050605;
+}
+
+/* Recommended usage:
+   65% dark neutrals
+   15% racing green
+   10% warm ivory
+    7% brass/aluminium
+    3% copper/leather
+
+   Main CTA: warm ivory background + carbon black text
+   Secondary CTA: transparent + brass border/text
+   Copper: engineering states, diagrams, micro accents only
+*/

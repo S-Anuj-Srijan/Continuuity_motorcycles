@@ -1,0 +1,1262 @@
+CONTINUITY MOTORS — FINAL WEBSITE FUNCTIONALITY & TECHNICAL ARCHITECTURE
+Version 2.0
+Updated after SEO/AI content architecture work
+Date: October 2026
+
+PURPOSE
+This is the implementation specification for the first Continuity Motors website.
+It combines:
+- front-end architecture
+- Cloudflare backend architecture
+- first-party experiment tracking
+- GA4
+- Microsoft Clarity
+- Cloudflare D1
+- Turnstile
+- SEO/search readiness
+- AI/LLM readability
+- content architecture
+- accessibility
+- performance
+- privacy/consent
+
+The site has two equal jobs:
+1. Look and behave like a credible premium motorcycle brand.
+2. Generate trustworthy experiment evidence about Camel and Messerschmitt.
+
+==================================================
+1. RECOMMENDED STACK
+==================================================
+
+FRONT END
+- Astro
+- TypeScript
+- HTML/CSS
+- small React islands only where real client interactivity is needed
+- CSS Modules or scoped CSS
+- no heavy SPA unless a later feature requires it
+
+HOSTING
+- Cloudflare Workers + Static Assets
+
+DATABASE
+- Cloudflare D1
+
+SECURITY / FORMS
+- Cloudflare Turnstile
+
+ANALYTICS
+- first-party D1 experiment events
+- Google Analytics 4
+- Microsoft Clarity
+- optional Cloudflare Web Analytics for performance/traffic sanity checks
+
+OPTIONAL LATER
+- Cloudflare R2 for large video/master media libraries
+- Workers Analytics Engine for high-volume event telemetry at larger scale
+
+==================================================
+2. FINAL PUBLIC PAGE ARCHITECTURE
+==================================================
+
+/
+  Homepage
+
+/c-01
+  C-01 product family
+
+/c-01/camel
+  C-01 Camel
+
+/c-01/messerschmitt
+  C-01 Messerschmitt
+
+/engineering
+  C-01 electric architecture and visible powertrain
+
+/design
+  design philosophy, watches, aviation, traditional motorcycle proportion
+
+/development
+  canonical current project status
+
+/about
+  Continuity Motors company identity
+
+/journal
+  educational/search content
+
+/journal/what-is-a-retro-electric-motorcycle
+/journal/what-makes-an-electric-cafe-racer
+/journal/can-electric-motorcycles-feel-mechanical
+/journal/visible-electric-motorcycle-powertrain
+/journal/how-electric-motorcycle-powertrain-works
+
+/privacy
+/terms
+
+404 page
+
+==================================================
+3. GLOBAL FRONT-END FUNCTIONALITY
+==================================================
+
+NAVIGATION
+Desktop:
+[Continuity logo]   C-01   Engineering   Design   Development   Journal   About   [Early Access]
+
+Mobile:
+[Continuity logo]                                              [Menu]
+
+Rules:
+- transparent over image-led hero where readable
+- solid dark/nav background once scrolled
+- keyboard accessible
+- active-page state
+- menu closes on route navigation
+- escape key closes mobile menu
+- focus trap inside open mobile menu
+
+GLOBAL EARLY ACCESS
+- email field
+- consent copy
+- Turnstile token
+- server-side submission
+- success state
+- error state
+- duplicate email handling
+- never put email in analytics event payloads
+
+GLOBAL CONSENT
+Categories:
+- Necessary
+- Analytics
+- Marketing only if added later
+
+Functions:
+- analytics default state based on applicable consent rules
+- allow accept/reject/manage
+- persist visitor preference
+- load/activate GA4/Clarity according to consent model
+- allow user to reopen privacy preferences
+
+GLOBAL FOOTER
+- site navigation
+- privacy
+- terms
+- current concept status note
+- official social links
+- copyright
+
+==================================================
+4. HOMEPAGE FUNCTIONALITY
+==================================================
+
+SECTIONS
+1. Full-screen hero
+2. Brand thesis
+3. C-01 family
+4. Engineering teaser
+5. Design teaser
+6. Development truth
+7. Early access
+
+EXPERIMENT REQUIREMENT
+For neutral traffic:
+- assign 50% Camel-first
+- assign 50% Messerschmitt-first
+- persist assignment for the session
+- randomize first hero/product ordering
+- record exposure order
+
+Do not re-randomize on reload within the same session.
+
+Direct campaign traffic:
+- if URL explicitly lands on Camel or Messerschmitt, mark assignment_method = direct_campaign
+- do not pretend it was randomized
+
+HOMEPAGE EVENTS
+hero_impression
+hero_active_ms
+hero_cta_click
+product_card_impression
+product_card_click
+product_card_active_ms
+section_view
+section_engagement
+early_access_impression
+lead_form_start
+lead_submit
+
+==================================================
+5. PRODUCT PAGE TEMPLATE — BOTH PRODUCTS
+==================================================
+
+CRITICAL EXPERIMENT RULE
+Camel and Messerschmitt pages must use the same content structure, equivalent CTA prominence and comparable interaction options.
+
+SECTIONS
+1. Hero
+2. Form / silhouette
+3. Engineering board
+4. Detail language
+5. Every angle / multi-view
+6. Context / poster
+7. Alternate product switch
+8. Current status
+9. Early access
+10. FAQ
+
+HERO
+- clean product identity
+- explicit factual descriptor in HTML
+- primary CTA: Follow development / Join early access
+- secondary CTA: Explore the machine
+
+ENGINEERING BOARD
+Desktop:
+- full-width or large contained image
+- optional interactive hotspots
+
+Mobile:
+- tap to full-screen viewer
+- pinch/zoom
+- accessible close control
+- text component list under image
+
+MULTI-VIEW BOARD
+- do not shrink into a tiny gallery tile
+- open full-screen
+- zoom
+- pan on desktop when appropriate
+
+POSTER
+- full-bleed visual section
+- minimal UI
+- optional share action
+
+PRODUCT SWITCHER
+- visibly offer other C-01 direction
+- track source and destination
+- track whether user switches back
+
+PRODUCT EVENTS
+product_view
+section_view
+section_engagement
+asset_open
+asset_zoom
+technical_hotspot_open
+gallery_next
+cta_click
+variant_switch
+share_click
+lead_form_start
+lead_form_error
+lead_submit
+
+==================================================
+6. ENGINEERING PAGE FUNCTIONALITY
+==================================================
+
+PURPOSE
+Provide machine-readable and human-readable technical explanations without presenting concept packaging as production validation.
+
+SECTIONS
+- overview
+- battery
+- power electronics
+- motor/final drive
+- controls/low-voltage
+- visible vs protected engineering
+- development status
+
+FUNCTIONS
+- use both engineering boards
+- optional interactive hotspots
+- every hotspot has:
+  * stable hotspot ID
+  * text explanation in HTML
+  * no PII
+- links to Development page
+- links back to each product
+
+TRACK
+engineering_page_view
+technical_hotspot_open
+engineering_section_active_ms
+product_return_click
+
+==================================================
+7. DESIGN PAGE FUNCTIONALITY
+==================================================
+
+SECTIONS
+- retro as reference
+- mechanical watches
+- historic aviation
+- traditional motorcycle architecture
+- visible electric architecture
+- Camel vs Messerschmitt character
+
+FUNCTIONS
+- image/text editorial sections
+- no critical information only on hover
+- all design philosophy in HTML
+- links to relevant product pages
+- links to Engineering
+
+TRACK
+design_section_active_ms
+product_click_from_design
+
+==================================================
+8. DEVELOPMENT PAGE FUNCTIONALITY
+==================================================
+
+PURPOSE
+Be the canonical public source for current truth.
+
+DISPLAY
+- last-updated date
+- current phase
+- prototype status
+- testing status
+- specification status
+- price status
+- launch status
+- availability status
+
+CURRENT INITIAL VALUES
+C-01 design concept = developed digitally
+Camel direction = developed digitally
+Messerschmitt direction = developed digitally
+physical prototype = not yet completed
+ride testing = not yet started
+production specifications = not finalized
+price = not announced
+launch = not announced
+availability = not for sale
+
+RULE
+When status changes:
+1. update Development page first
+2. update structured data
+3. update product-page factual copy
+4. update any FAQ or journal statement that now conflicts
+
+This page should never contain stale status if another page has newer information.
+
+==================================================
+9. JOURNAL FUNCTIONALITY
+==================================================
+
+PURPOSE
+Educational/search/AI knowledge layer, not spam content.
+
+INDEX
+- title
+- excerpt
+- category
+- publish date
+- updated date where changed
+- related product/topic links
+
+ARTICLE TEMPLATE
+- H1
+- direct answer opening
+- structured H2/H3 sections
+- related links
+- factual disclaimer when discussing C-01 status
+- author/publisher info when finalized
+- last updated where material facts change
+
+INITIAL ARTICLES
+- What is a retro electric motorcycle?
+- What makes an electric café racer?
+- Can an electric motorcycle still feel mechanical?
+- Why expose an electric motorcycle powertrain?
+- How does an electric motorcycle powertrain work?
+
+==================================================
+10. CLOUDFARE BACKEND ARCHITECTURE
+==================================================
+
+BROWSER
+  |
+  v
+CLOUDFLARE EDGE
+  |
+  +-- Static HTML/CSS/JS/images
+  |
+  +-- /api/session ------> Worker ------> D1
+  |
+  +-- /api/events -------> Worker ------> D1
+  |
+  +-- /api/experiment ---> Worker ------> assignment response
+  |
+  +-- /api/lead ---------> Worker ------> Turnstile verification
+                                      \-> D1 lead + conversion
+
+EXTERNAL ANALYTICS
+Browser -> GA4
+Browser -> Microsoft Clarity
+
+OPTIONAL
+Cloudflare Web Analytics for performance and visit sanity checking
+
+==================================================
+11. API ROUTES
+==================================================
+
+POST /api/session
+Purpose:
+- create session
+- record landing context
+- record experiment assignment
+- record consent state
+- record campaign fields
+
+POST /api/events
+Purpose:
+- receive batched meaningful experiment events
+
+Recommended rules:
+- max 25 events/request
+- event-name allowlist
+- strict request validation
+- server timestamp added
+- reject oversized payloads
+- no PII in metadata_json
+- rate-limit abnormal traffic
+
+POST /api/lead
+Flow:
+1. validate request
+2. verify Turnstile server-side
+3. normalize email
+4. rate-limit
+5. deduplicate as desired
+6. insert lead
+7. insert conversion in the same server flow
+8. return success
+
+GET /api/experiment
+Purpose:
+- return session experiment assignment where needed
+
+==================================================
+12. IDENTITY MODEL
+==================================================
+
+Generate:
+event_id = random UUID per event
+session_id = random UUID per session
+visitor_id = persistent random UUID only where consent/privacy model permits
+client_seq = 1,2,3...
+
+Never use email as analytics identity.
+
+Recommended session boundary:
+- 30 minutes inactivity or consistent browser-session rule
+
+If analytics consent is declined:
+- do not create persistent cross-session analytics identity
+- keep only functionality-essential/session-scoped identifiers as appropriate
+- do not send disallowed GA4/Clarity analytics
+
+==================================================
+13. EXPERIMENT MODEL
+==================================================
+
+experiment_id:
+c01_direction_v1
+
+variants:
+camel
+messerschmitt
+
+neutral traffic allocation:
+50 / 50
+
+store:
+experiment_id
+variant_id
+experiment_version
+assignment_method
+assignment_time
+first_product_id
+exposure_order
+
+assignment_method values:
+randomized
+direct_campaign
+other explicit source if needed
+
+==================================================
+14. FIRST-PARTY EVENT MODEL
+==================================================
+
+Base event payload:
+
+{
+  event_id,
+  event_name,
+  occurred_at,
+  session_id,
+  visitor_id,
+  client_seq,
+
+  experiment_id,
+  variant_id,
+  experiment_version,
+
+  product_id,
+  page_path,
+  section_id,
+  element_id,
+  asset_id,
+
+  elapsed_ms,
+  value_num,
+  value_text,
+  metadata
+}
+
+RULES
+- snake_case event names
+- stable names after launch
+- canonical fields become DB columns
+- rare details go in metadata_json
+- metadata_json never contains email/name/phone/free-form personal text
+
+CORE EVENTS
+session_start
+product_view
+section_view
+section_engagement
+asset_open
+asset_zoom
+gallery_next
+technical_hotspot_open
+spec_expand
+variant_switch
+share_click
+cta_click
+lead_form_start
+lead_form_error
+lead_submit
+scroll_summary
+session_summary
+
+==================================================
+15. SECTION ENGAGEMENT MEASUREMENT
+==================================================
+
+Use:
+- IntersectionObserver
+- Page Visibility API
+- idle detection
+
+Section becomes active when:
+- at least 50% visible
+- tab visible
+- visitor not idle beyond threshold
+
+Accumulate time client-side.
+
+Flush summarized engagement when:
+- section exits
+- page hides
+- route changes
+- session ends
+
+DO NOT
+- log every scroll pixel
+- log continuous mouse coordinates to D1
+
+Clarity already provides the dense qualitative behavior layer.
+
+==================================================
+16. DATABASE TABLES
+==================================================
+
+products
+assets
+experiments
+experiment_variants
+visitors
+sessions
+product_exposures
+events
+session_product_summary
+leads
+conversions
+
+EVENTS TABLE
+append-only raw meaningful behavior
+
+SESSION_PRODUCT_SUMMARY
+human-readable session × product rollup
+
+Suggested fields:
+session_id
+product_id
+first_seen_at
+last_seen_at
+first_exposure_order
+
+product_active_ms
+hero_active_ms
+silhouette_active_ms
+engineering_active_ms
+views_board_active_ms
+details_active_ms
+poster_active_ms
+
+max_scroll_pct
+
+asset_opens
+asset_zooms
+technical_interactions
+spec_expands
+share_clicks
+cta_clicks
+
+lead_form_started
+lead_submitted
+
+switches_away
+switches_to
+returned_after_switch
+
+==================================================
+17. PRIMARY EXPERIMENT METRICS
+==================================================
+
+Product View Rate
+= product viewers / qualified sessions
+
+Qualified Product View
+initial proposed definition:
+product_active_ms >= 15,000
+AND max_scroll_pct >= 50
+
+Keep threshold versioned.
+
+Deep Technical Interest
+= technical interaction OR engineering active-time threshold
+
+Switch-Away Rate
+= sessions switching from product A to product B / sessions exposed to A
+
+Switch-Back Rate
+= A -> B -> A sessions / A -> B switchers
+
+CTA Intent Rate
+= sessions with CTA click / qualified product viewers
+
+Lead Conversion Rate
+= successful leads / qualified product viewers
+
+Share Rate
+= sessions with share click / qualified product viewers
+
+Technical-to-Lead
+= leads after technical interaction / sessions with technical interaction
+
+DO NOT collapse all outcomes into one arbitrary winner score.
+
+Keep separate:
+attention
+depth
+technical curiosity
+comparative behavior
+CTA intent
+lead conversion
+sharing
+return behavior
+
+==================================================
+18. GA4 RESPONSIBILITY
+==================================================
+
+GA4 = acquisition + funnel layer
+
+Use it for:
+- traffic source
+- UTM campaigns
+- landing pages
+- device/browser
+- page views
+- product views
+- high-value funnel events
+- lead conversion
+
+Recommended events:
+view_item
+select_item
+generate_lead
+
+Useful custom dimensions:
+product_id
+experiment_id
+variant_id
+entry_product
+
+Do not send every D1 event into GA4.
+
+Never send email or other PII.
+
+==================================================
+19. MICROSOFT CLARITY RESPONSIBILITY
+==================================================
+
+Clarity = qualitative UX layer
+
+Use:
+- session recordings
+- heatmaps
+- scroll maps
+- click maps
+- rage clicks
+- dead clicks
+- viewport behavior
+
+Set non-PII context:
+experiment_id
+variant_id
+product_id
+entry_source
+
+Send selected custom events:
+variant_switch
+technical_hotspot_open
+asset_open
+cta_click
+lead_submit
+
+Explicitly mask:
+email fields
+name fields if later added
+free-text fields
+
+Never send email/name as Clarity tags.
+
+==================================================
+20. TURNSTILE
+==================================================
+
+Use on:
+- early-access form
+- future contact form
+
+Do not use on every click.
+
+Server must verify token before saving lead.
+
+==================================================
+21. IMAGE PERFORMANCE
+==================================================
+
+Generate responsive derivatives:
+480w
+768w
+1280w
+1920w
+2560w only if justified
+
+Use:
+AVIF first
+WebP fallback
+
+Implement:
+srcset
+sizes
+lazy loading below fold
+preload only actual hero
+explicit width/height or aspect ratio
+avoid preloading both product directions on mobile
+
+Performance matters to experiment validity:
+a slower product page can falsely appear less interesting.
+
+==================================================
+22. ACCESSIBILITY
+==================================================
+
+Must include:
+- semantic heading order
+- keyboard navigation
+- visible focus states
+- meaningful alt text
+- sufficient contrast
+- prefers-reduced-motion
+- no critical info only on hover
+- labeled gallery controls
+- accessible dialogs/viewers
+- correctly labeled form fields
+- programmatically connected validation errors
+
+==================================================
+23. MOTION
+==================================================
+
+USE
+- 250–500 ms fades
+- restrained reveals
+- gentle hover scaling
+- controlled image crossfades
+- limited desktop parallax
+
+AVOID
+- cursor followers
+- scroll-jacking
+- autoplay audio
+- excessive text animation
+- fake 3D rotations without a real model
+- animations that delay information access
+
+==================================================
+24. SEO + AI READABILITY — IMPLEMENTATION REQUIREMENTS
+==================================================
+
+Every core page must include:
+- unique <title>
+- unique meta description
+- one clear H1
+- semantic H2/H3 hierarchy
+- canonical URL
+- crawlable HTML text
+- descriptive internal links
+- correct alt text
+- Open Graph metadata
+- Twitter/X card metadata if desired
+- last-updated date where facts can change
+
+CORE FACTS MUST NOT EXIST ONLY IN IMAGES.
+
+ROBOTS
+- do not accidentally block search engines
+- allow intended search crawlers
+- if AI search discovery is desired, do not block relevant search crawlers such as OAI-SearchBot
+- training crawlers can be decided separately from search crawlers
+
+SITEMAP
+Include all public canonical URLs.
+Exclude:
+- API routes
+- preview routes
+- duplicate/parameter variants
+- private test pages
+
+STRUCTURED DATA — LATER IMPLEMENTATION STEP
+Plan for:
+- Organization
+- WebSite
+- BreadcrumbList where relevant
+- Article on journal content
+- appropriate Product-like entity markup only when it truthfully matches the state of the concept
+- do not fabricate price, availability, ratings, reviews or SKU data
+
+LLMS.TXT
+Optional only.
+Do not treat llms.txt as a replacement for:
+- crawlable pages
+- clear HTML facts
+- sitemap
+- structured data
+- robots configuration
+
+==================================================
+25. FOLDER STRUCTURE
+==================================================
+
+continuity-motors/
+  README.md
+  schema.sql
+  package.json
+  wrangler.jsonc
+  astro.config.mjs
+  tsconfig.json
+
+  public/
+    assets/
+      brand/
+      products/
+        c01/
+          camel/
+          messerschmitt/
+
+  src/
+    components/
+      Navigation.astro
+      Footer.astro
+      ProductHero.astro
+      ProductCard.astro
+      ProductSwitcher.astro
+      TechnicalBoard.astro
+      FullscreenImageViewer.tsx
+      EarlyAccessForm.tsx
+      ConsentBanner.tsx
+      DevelopmentStatus.astro
+      FAQ.astro
+
+    content/
+      products/
+        c01-camel.ts
+        c01-messerschmitt.ts
+      journal/
+
+    layouts/
+      BaseLayout.astro
+      ProductLayout.astro
+      JournalLayout.astro
+
+    lib/
+      analytics.ts
+      experiment.ts
+      session.ts
+      consent.ts
+      seo.ts
+
+    pages/
+      index.astro
+      c-01/
+        index.astro
+        camel.astro
+        messerschmitt.astro
+      engineering.astro
+      design.astro
+      development.astro
+      about.astro
+      journal/
+        index.astro
+        [...slug].astro
+      privacy.astro
+      terms.astro
+
+      api/
+        session.ts
+        events.ts
+        experiment.ts
+        lead.ts
+
+    styles/
+      tokens.css
+      global.css
+      motion.css
+
+  migrations/
+    0001_initial.sql
+
+==================================================
+26. ENVIRONMENT VARIABLES / BINDINGS
+==================================================
+
+PUBLIC:
+PUBLIC_GA_MEASUREMENT_ID
+PUBLIC_CLARITY_PROJECT_ID
+PUBLIC_TURNSTILE_SITE_KEY
+
+SECRET:
+TURNSTILE_SECRET_KEY
+
+BINDING:
+DB -> D1 database
+
+Never expose:
+Cloudflare API token
+Turnstile secret
+future email provider secret
+any server credential
+
+==================================================
+27. DATA FLOW — FIRST VISIT
+==================================================
+
+1. Read consent state.
+2. Create session_id.
+3. Parse UTM/referrer.
+4. Determine experiment assignment.
+5. POST /api/session.
+6. Render content.
+7. Activate GA4/Clarity according to consent.
+8. Queue meaningful first-party events.
+9. Batch POST /api/events.
+10. Flush section/session summaries on page hide/route change.
+
+==================================================
+28. DATA FLOW — LEAD
+==================================================
+
+1. User focuses/interacts with form.
+2. record lead_form_start.
+3. user submits.
+4. Turnstile token sent with email to Worker.
+5. Worker verifies Turnstile.
+6. normalize email.
+7. rate-limit.
+8. D1 inserts lead.
+9. D1 inserts conversion.
+10. server returns success.
+11. browser shows success UI.
+12. GA4/Clarity receive allowed non-PII success event.
+
+D1 server-side conversion is the source of truth.
+Do not treat a client-side analytics success call as the canonical lead record.
+
+==================================================
+29. PRIVACY / PII RULES
+==================================================
+
+EVENTS MUST NEVER CONTAIN:
+email
+phone
+name
+full address
+free-text form contents
+
+LEADS TABLE MAY CONTAIN:
+email
+consent
+created timestamp
+product/experiment context
+
+Analytics should reference:
+lead_id
+session_id
+product_id
+not copied email
+
+Do not build fingerprinting.
+Do not store raw IP addresses for behavioral profiling.
+
+==================================================
+30. DASHBOARDS
+==================================================
+
+1. EXPERIMENT OVERVIEW
+- sessions
+- qualified sessions
+- Camel exposure
+- Messerschmitt exposure
+- lead conversion by product
+- CTA conversion by product
+- median active time
+- max scroll distribution
+
+2. PRODUCT DEPTH
+- section active time
+- technical interaction rate
+- image open rate
+- share rate
+- switch-away
+- switch-back
+
+3. ACQUISITION
+- UTM source
+- campaign
+- referrer
+- device
+- qualified rate
+- lead rate
+
+4. PATH BEHAVIOR
+- first product
+- second product
+- switch sequence
+- final product before lead
+
+5. UX DIAGNOSTICS
+Use Clarity:
+- rage clicks
+- dead clicks
+- heatmaps
+- scroll drop-offs
+- recordings
+
+==================================================
+31. EXPERIMENT INTEGRITY RULES
+==================================================
+
+1. Keep product pages structurally equivalent.
+2. Do not quietly change one page mid-test.
+3. Version meaningful copy/image changes.
+4. Record experiment_version with events.
+5. Keep UTM campaign traffic distinguishable.
+6. Randomize product order for neutral traffic.
+7. Separate randomized traffic from direct-product traffic.
+8. Use the same CTA language/prominence on both product pages during a comparison test.
+9. Do not give one product validated specifications while the other lacks equivalent information during the same comparison.
+10. Check page performance before interpreting product-interest differences.
+11. Mark internal/test traffic so it can be excluded.
+
+==================================================
+32. WHAT NOT TO COLLECT
+==================================================
+
+Do not collect just because it is technically possible.
+
+Avoid:
+- raw mouse coordinates in D1
+- every scroll pixel
+- keystrokes
+- form contents in analytics
+- raw IP behavioral profiles
+- canvas/device fingerprinting
+- contact info in GA4
+- contact info in Clarity
+- inferred demographics without clear need
+
+==================================================
+33. LAUNCH STAGES
+==================================================
+
+STAGE 1 — VISUAL SHELL
+- homepage
+- both product pages
+- engineering
+- design
+- development
+- about
+- responsive navigation
+- optimized assets
+
+STAGE 2 — FIRST-PARTY EXPERIMENT LAYER
+- session IDs
+- experiment assignment
+- D1
+- /api/session
+- /api/events
+- summary updates
+
+STAGE 3 — SEO/AI TECHNICAL LAYER
+- titles/meta
+- canonical URLs
+- robots.txt
+- XML sitemap
+- semantic HTML QA
+- Open Graph
+- structured-data implementation
+- search/AI crawler policy
+- 404/status codes
+
+STAGE 4 — GA4 + CLARITY
+- consent
+- GA4
+- Clarity
+- custom tags/events
+- UTM QA
+
+STAGE 5 — CONVERSION
+- early-access form
+- Turnstile
+- D1 leads/conversions
+- generate_lead event
+
+STAGE 6 — JOURNAL
+- publish initial five articles
+- internal links
+- article metadata
+- Article structured data
+
+STAGE 7 — QA
+Test:
+- Chrome desktop
+- Safari desktop
+- iOS Safari
+- Android Chrome
+- slow mobile
+- analytics denied
+- analytics accepted
+- direct traffic
+- Reddit UTM
+- Instagram UTM
+- Camel-first
+- Messerschmitt-first
+- screen reader/keyboards
+- image loading
+- form spam/error states
+- 404
+- sitemap
+- crawler access
+
+==================================================
+34. DEFINITION OF DONE
+==================================================
+
+The first release is done when:
+
+[ ] Homepage looks like a real premium motorcycle brand.
+[ ] Camel and Messerschmitt pages have equivalent structures.
+[ ] All assets have stable IDs.
+[ ] All pages are responsive.
+[ ] Important product facts exist in HTML text.
+[ ] Concept status is explicit.
+[ ] No unverified engineering claim is presented as production fact.
+[ ] Session and experiment assignment are stored.
+[ ] Product exposure order is stored.
+[ ] Section active time is stored.
+[ ] Product switching is stored.
+[ ] Early-access leads are stored server-side.
+[ ] GA4 receives acquisition/funnel events.
+[ ] Clarity receives non-PII experiment context.
+[ ] PII never appears in analytics events.
+[ ] Turnstile protects forms.
+[ ] Consent behavior is implemented.
+[ ] Images are responsive and optimized.
+[ ] Core Web Vitals are checked.
+[ ] robots.txt is intentional.
+[ ] sitemap.xml contains canonical public pages.
+[ ] canonical tags are correct.
+[ ] structured data matches visible facts.
+[ ] OAI/Search/AI crawler policy is intentionally configured.
+[ ] test traffic can be excluded.
+[ ] database queries can compare Camel and Messerschmitt cleanly.
+[ ] Development page is the canonical current-status source.
+[ ] Privacy/Terms have received final legal review before public launch.
+
+==================================================
+35. THE CORE SYSTEM IN ONE DIAGRAM
+==================================================
+
+VISITOR
+   |
+   v
+CLOUDFLARE STATIC SITE
+Astro HTML/CSS/JS + responsive product imagery
+   |
+   +----------------------+
+   |                      |
+   v                      v
+WORKER API              GA4 / CLARITY
+   |
+   +--> /api/session
+   +--> /api/events
+   +--> /api/experiment
+   +--> /api/lead
+            |
+            +--> Turnstile verification
+   |
+   v
+CLOUDFLARE D1
+   |
+   +--> sessions
+   +--> experiment assignment
+   +--> meaningful events
+   +--> session-product summaries
+   +--> leads
+   +--> conversions
+
+SEARCH / AI DISCOVERY
+   |
+   +--> crawlable semantic HTML
+   +--> robots rules
+   +--> sitemap
+   +--> canonical URLs
+   +--> structured data
+   +--> clear factual copy
+   +--> journal knowledge layer
+
+This is the intended first production architecture.
